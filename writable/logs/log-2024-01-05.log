@@ -1,0 +1,22 @@
+CRITICAL - 2024-01-05 15:15:40 --> Undefined variable $materia
+in APPPATH\Views\Previos.php on line 39.
+ 1 APPPATH\Views\Previos.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $materia', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\Previos.php', 39)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\Previos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('previos', [], true)
+ 5 APPPATH\Controllers\Previos.php(19): view('previos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Previos->listar_previos()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Previos))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 15:17:32 --> Undefined variable $materia
+in APPPATH\Views\Previos.php on line 43.
+ 1 APPPATH\Views\Previos.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $materia', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\Previos.php', 43)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\Previos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('previos', [], true)
+ 5 APPPATH\Controllers\Previos.php(19): view('previos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Previos->listar_previos()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Previos))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

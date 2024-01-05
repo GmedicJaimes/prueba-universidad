@@ -1,0 +1,18 @@
+ERROR - 2023-12-28 22:49:37 --> mysqli_sql_exception: Duplicate entry '1234222-A' for key 'PRIMARY' in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE materia ...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE materia ...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE materia ...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Materias.php(72): CodeIgniter\Database\BaseConnection->query('UPDATE materia ...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Materias->actualizar_materia()
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materias))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-12-28 22:49:37 --> Duplicate entry '1234222-A' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Materias.php(72): CodeIgniter\Database\BaseConnection->query('UPDATE materia SET codigo_materia = \'1234222\', nombre = \'Pensamiento Gerencial\', grupo = \'A\' WHERE codigo_materia = \'1234444\'')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Materias->actualizar_materia()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materias))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

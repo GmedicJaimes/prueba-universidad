@@ -1,0 +1,1013 @@
+CRITICAL - 2023-12-13 16:31:46 --> syntax error, unexpected token "return"
+in APPPATH\Controllers\Personas.php on line 61.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\prueba-universidad\\app\\Controllers\\Personas.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Personas')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Personas')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Personas', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:32:25 --> Class "Configu\Database" not found
+in APPPATH\Controllers\Personas.php on line 53.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->guardar_alumno()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:33:45 --> Undefined variable $datos
+in APPPATH\Controllers\Personas.php on line 65.
+ 1 APPPATH\Controllers\Personas.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Controllers\\Personas.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->editar_alumnos('156722')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:34:10 --> Undefined variable $alumnos
+in APPPATH\Views\alumnos\editarAlumnos.php on line 22.
+ 1 APPPATH\Views\alumnos\editarAlumnos.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alumnos', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php', 22)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('alumnos/editarAlumnos', [], true)
+ 5 APPPATH\Controllers\Personas.php(65): view('alumnos/editarAlumnos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->editar_alumnos('156722')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:35:21 --> Undefined variable $alumnos
+in APPPATH\Views\alumnos\editarAlumnos.php on line 22.
+ 1 APPPATH\Views\alumnos\editarAlumnos.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alumnos', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php', 22)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('alumnos/editarAlumnos', [], true)
+ 5 APPPATH\Controllers\Personas.php(65): view('alumnos/editarAlumnos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->editar_alumnos('156722')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:35:40 --> Undefined variable $alumnos
+in APPPATH\Views\alumnos\editarAlumnos.php on line 22.
+ 1 APPPATH\Views\alumnos\editarAlumnos.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alumnos', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php', 22)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('alumnos/editarAlumnos', [], true)
+ 5 APPPATH\Controllers\Personas.php(64): view('alumnos/editarAlumnos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->editar_alumnos('156722')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:36:04 --> Undefined variable $alumnos
+in APPPATH\Views\alumnos\editarAlumnos.php on line 22.
+ 1 APPPATH\Views\alumnos\editarAlumnos.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alumnos', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php', 22)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('alumnos/editarAlumnos', [], true)
+ 5 APPPATH\Controllers\Personas.php(64): view('alumnos/editarAlumnos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->editar_alumnos('156722')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:36:31 --> Undefined variable $alumnos
+in APPPATH\Views\alumnos\editarAlumnos.php on line 22.
+ 1 APPPATH\Views\alumnos\editarAlumnos.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alumnos', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php', 22)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('alumnos/editarAlumnos', [], true)
+ 5 APPPATH\Controllers\Personas.php(64): view('alumnos/editarAlumnos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->editar_alumnos('156722')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:37:06 --> Undefined array key "codigo"
+in APPPATH\Views\alumnos\editarAlumnos.php on line 22.
+ 1 APPPATH\Views\alumnos\editarAlumnos.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo"', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php', 22)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('alumnos/editarAlumnos', [], true)
+ 5 APPPATH\Controllers\Personas.php(64): view('alumnos/editarAlumnos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->editar_alumnos('156722')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:37:24 --> Undefined array key "codigo"
+in APPPATH\Views\alumnos\editarAlumnos.php on line 26.
+ 1 APPPATH\Views\alumnos\editarAlumnos.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo"', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php', 26)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('alumnos/editarAlumnos', [], true)
+ 5 APPPATH\Controllers\Personas.php(64): view('alumnos/editarAlumnos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->editar_alumnos('156722')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:37:29 --> Undefined array key "codigo"
+in APPPATH\Views\alumnos\editarAlumnos.php on line 22.
+ 1 APPPATH\Views\alumnos\editarAlumnos.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo"', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php', 22)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('alumnos/editarAlumnos', [], true)
+ 5 APPPATH\Controllers\Personas.php(64): view('alumnos/editarAlumnos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->editar_alumnos('156722')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:37:56 --> Undefined array key "codigo"
+in APPPATH\Views\alumnos\editarAlumnos.php on line 22.
+ 1 APPPATH\Views\alumnos\editarAlumnos.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo"', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php', 22)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('alumnos/editarAlumnos', [], true)
+ 5 APPPATH\Controllers\Personas.php(64): view('alumnos/editarAlumnos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->editar_alumnos('156722')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:37:57 --> Undefined array key "codigo"
+in APPPATH\Views\alumnos\editarAlumnos.php on line 22.
+ 1 APPPATH\Views\alumnos\editarAlumnos.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo"', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php', 22)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('alumnos/editarAlumnos', [], true)
+ 5 APPPATH\Controllers\Personas.php(64): view('alumnos/editarAlumnos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->editar_alumnos('156722')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:38:02 --> Undefined array key "codigo"
+in APPPATH\Views\alumnos\editarAlumnos.php on line 22.
+ 1 APPPATH\Views\alumnos\editarAlumnos.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo"', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php', 22)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('alumnos/editarAlumnos', [], true)
+ 5 APPPATH\Controllers\Personas.php(64): view('alumnos/editarAlumnos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->editar_alumnos('156722')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:40:25 --> Undefined array key "codigo"
+in APPPATH\Views\alumnos\editarAlumnos.php on line 24.
+ 1 APPPATH\Views\alumnos\editarAlumnos.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo"', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php', 24)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('alumnos/editarAlumnos', [], true)
+ 5 APPPATH\Controllers\Personas.php(64): view('alumnos/editarAlumnos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->editar_alumnos('156722')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:40:37 --> Undefined array key "codigo"
+in APPPATH\Views\alumnos\editarAlumnos.php on line 24.
+ 1 APPPATH\Views\alumnos\editarAlumnos.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo"', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php', 24)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('alumnos/editarAlumnos', [], true)
+ 5 APPPATH\Controllers\Personas.php(64): view('alumnos/editarAlumnos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->editar_alumnos('156722')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:40:39 --> Undefined array key "codigo"
+in APPPATH\Views\alumnos\editarAlumnos.php on line 24.
+ 1 APPPATH\Views\alumnos\editarAlumnos.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo"', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php', 24)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('alumnos/editarAlumnos', [], true)
+ 5 APPPATH\Controllers\Personas.php(64): view('alumnos/editarAlumnos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->editar_alumnos('156722')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:40:53 --> Attempt to read property "codigo" on array
+in APPPATH\Views\alumnos\editarAlumnos.php on line 24.
+ 1 APPPATH\Views\alumnos\editarAlumnos.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "codigo" on array', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php', 24)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('alumnos/editarAlumnos', [], true)
+ 5 APPPATH\Controllers\Personas.php(64): view('alumnos/editarAlumnos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->editar_alumnos('156722')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:40:55 --> Attempt to read property "codigo" on array
+in APPPATH\Views\alumnos\editarAlumnos.php on line 24.
+ 1 APPPATH\Views\alumnos\editarAlumnos.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "codigo" on array', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php', 24)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('alumnos/editarAlumnos', [], true)
+ 5 APPPATH\Controllers\Personas.php(64): view('alumnos/editarAlumnos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->editar_alumnos('156722')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:41:01 --> Undefined array key "codigo"
+in APPPATH\Views\alumnos\editarAlumnos.php on line 24.
+ 1 APPPATH\Views\alumnos\editarAlumnos.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo"', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php', 24)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('alumnos/editarAlumnos', [], true)
+ 5 APPPATH\Controllers\Personas.php(64): view('alumnos/editarAlumnos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->editar_alumnos('156722')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:42:10 --> Attempt to read property "codigo" on array
+in APPPATH\Views\alumnos\editarAlumnos.php on line 24.
+ 1 APPPATH\Views\alumnos\editarAlumnos.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "codigo" on array', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php', 24)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('alumnos/editarAlumnos', [], true)
+ 5 APPPATH\Controllers\Personas.php(64): view('alumnos/editarAlumnos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->editar_alumnos('156722')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:42:22 --> Attempt to read property "codigo" on array
+in APPPATH\Views\alumnos\editarAlumnos.php on line 24.
+ 1 APPPATH\Views\alumnos\editarAlumnos.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "codigo" on array', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php', 24)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('alumnos/editarAlumnos', [], true)
+ 5 APPPATH\Controllers\Personas.php(64): view('alumnos/editarAlumnos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->editar_alumnos('156722')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:42:28 --> Undefined array key "codigo"
+in APPPATH\Views\alumnos\editarAlumnos.php on line 24.
+ 1 APPPATH\Views\alumnos\editarAlumnos.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo"', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php', 24)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('alumnos/editarAlumnos', [], true)
+ 5 APPPATH\Controllers\Personas.php(64): view('alumnos/editarAlumnos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->editar_alumnos('156722')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:45:04 --> Undefined array key "codigo"
+in APPPATH\Views\alumnos\editarAlumnos.php on line 24.
+ 1 APPPATH\Views\alumnos\editarAlumnos.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo"', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php', 24)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('alumnos/editarAlumnos', [], true)
+ 5 APPPATH\Controllers\Personas.php(64): view('alumnos/editarAlumnos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->editar_alumnos('156722')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:45:06 --> Undefined array key "codigo"
+in APPPATH\Views\alumnos\editarAlumnos.php on line 24.
+ 1 APPPATH\Views\alumnos\editarAlumnos.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo"', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php', 24)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('alumnos/editarAlumnos', [], true)
+ 5 APPPATH\Controllers\Personas.php(64): view('alumnos/editarAlumnos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->editar_alumnos('156722')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:45:15 --> Undefined array key "codigo"
+in APPPATH\Views\alumnos\editarAlumnos.php on line 24.
+ 1 APPPATH\Views\alumnos\editarAlumnos.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo"', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php', 24)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('alumnos/editarAlumnos', [], true)
+ 5 APPPATH\Controllers\Personas.php(64): view('alumnos/editarAlumnos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->editar_alumnos('156722')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:45:31 --> Array to string conversion
+in APPPATH\Views\alumnos\editarAlumnos.php on line 24.
+ 1 APPPATH\Views\alumnos\editarAlumnos.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php', 24)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('alumnos/editarAlumnos', [], true)
+ 5 APPPATH\Controllers\Personas.php(64): view('alumnos/editarAlumnos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->editar_alumnos('156722')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:45:42 --> Undefined array key "codigo"
+in APPPATH\Views\alumnos\editarAlumnos.php on line 24.
+ 1 APPPATH\Views\alumnos\editarAlumnos.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo"', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php', 24)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('alumnos/editarAlumnos', [], true)
+ 5 APPPATH\Controllers\Personas.php(64): view('alumnos/editarAlumnos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->editar_alumnos('156722')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:46:11 --> Undefined array key "codigo"
+in APPPATH\Views\alumnos\editarAlumnos.php on line 24.
+ 1 APPPATH\Views\alumnos\editarAlumnos.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo"', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php', 24)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('alumnos/editarAlumnos', [], true)
+ 5 APPPATH\Controllers\Personas.php(64): view('alumnos/editarAlumnos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->editar_alumnos('156722')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:46:12 --> Undefined array key "codigo"
+in APPPATH\Views\alumnos\editarAlumnos.php on line 24.
+ 1 APPPATH\Views\alumnos\editarAlumnos.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo"', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php', 24)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('alumnos/editarAlumnos', [], true)
+ 5 APPPATH\Controllers\Personas.php(64): view('alumnos/editarAlumnos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->editar_alumnos('156722')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:46:13 --> Undefined array key "codigo"
+in APPPATH\Views\alumnos\editarAlumnos.php on line 24.
+ 1 APPPATH\Views\alumnos\editarAlumnos.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo"', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php', 24)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('alumnos/editarAlumnos', [], true)
+ 5 APPPATH\Controllers\Personas.php(64): view('alumnos/editarAlumnos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->editar_alumnos('156722')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:46:13 --> Undefined array key "codigo"
+in APPPATH\Views\alumnos\editarAlumnos.php on line 24.
+ 1 APPPATH\Views\alumnos\editarAlumnos.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo"', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php', 24)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('alumnos/editarAlumnos', [], true)
+ 5 APPPATH\Controllers\Personas.php(64): view('alumnos/editarAlumnos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->editar_alumnos('156722')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:46:14 --> Undefined array key "codigo"
+in APPPATH\Views\alumnos\editarAlumnos.php on line 24.
+ 1 APPPATH\Views\alumnos\editarAlumnos.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo"', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php', 24)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('alumnos/editarAlumnos', [], true)
+ 5 APPPATH\Controllers\Personas.php(64): view('alumnos/editarAlumnos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->editar_alumnos('156722')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:46:14 --> Undefined array key "codigo"
+in APPPATH\Views\alumnos\editarAlumnos.php on line 24.
+ 1 APPPATH\Views\alumnos\editarAlumnos.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo"', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php', 24)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('alumnos/editarAlumnos', [], true)
+ 5 APPPATH\Controllers\Personas.php(64): view('alumnos/editarAlumnos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->editar_alumnos('156722')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:46:14 --> Undefined array key "codigo"
+in APPPATH\Views\alumnos\editarAlumnos.php on line 24.
+ 1 APPPATH\Views\alumnos\editarAlumnos.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo"', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php', 24)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('alumnos/editarAlumnos', [], true)
+ 5 APPPATH\Controllers\Personas.php(64): view('alumnos/editarAlumnos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->editar_alumnos('156722')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:46:15 --> Undefined array key "codigo"
+in APPPATH\Views\alumnos\editarAlumnos.php on line 24.
+ 1 APPPATH\Views\alumnos\editarAlumnos.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo"', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php', 24)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('alumnos/editarAlumnos', [], true)
+ 5 APPPATH\Controllers\Personas.php(64): view('alumnos/editarAlumnos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->editar_alumnos('156722')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:46:16 --> Undefined array key "codigo"
+in APPPATH\Views\alumnos\editarAlumnos.php on line 24.
+ 1 APPPATH\Views\alumnos\editarAlumnos.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo"', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php', 24)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('alumnos/editarAlumnos', [], true)
+ 5 APPPATH\Controllers\Personas.php(64): view('alumnos/editarAlumnos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->editar_alumnos('156722')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:46:17 --> Undefined array key "codigo"
+in APPPATH\Views\alumnos\editarAlumnos.php on line 24.
+ 1 APPPATH\Views\alumnos\editarAlumnos.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo"', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php', 24)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('alumnos/editarAlumnos', [], true)
+ 5 APPPATH\Controllers\Personas.php(64): view('alumnos/editarAlumnos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->editar_alumnos('156722')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:46:18 --> Undefined array key "codigo"
+in APPPATH\Views\alumnos\editarAlumnos.php on line 24.
+ 1 APPPATH\Views\alumnos\editarAlumnos.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo"', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php', 24)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('alumnos/editarAlumnos', [], true)
+ 5 APPPATH\Controllers\Personas.php(64): view('alumnos/editarAlumnos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->editar_alumnos('156722')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:46:18 --> Undefined array key "codigo"
+in APPPATH\Views\alumnos\editarAlumnos.php on line 24.
+ 1 APPPATH\Views\alumnos\editarAlumnos.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo"', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php', 24)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('alumnos/editarAlumnos', [], true)
+ 5 APPPATH\Controllers\Personas.php(64): view('alumnos/editarAlumnos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->editar_alumnos('156722')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:46:18 --> Undefined array key "codigo"
+in APPPATH\Views\alumnos\editarAlumnos.php on line 24.
+ 1 APPPATH\Views\alumnos\editarAlumnos.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo"', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php', 24)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('alumnos/editarAlumnos', [], true)
+ 5 APPPATH\Controllers\Personas.php(64): view('alumnos/editarAlumnos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->editar_alumnos('156722')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 16:59:48 --> Undefined array key "codigo"
+in APPPATH\Views\alumnos\editarAlumnos.php on line 22.
+ 1 APPPATH\Views\alumnos\editarAlumnos.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo"', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php', 22)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('alumnos/editarAlumnos', [], true)
+ 5 APPPATH\Controllers\Personas.php(64): view('alumnos/editarAlumnos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->editar_alumnos('1220344')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 17:00:15 --> Undefined constant "codigo"
+in APPPATH\Views\alumnos\editarAlumnos.php on line 22.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('alumnos/editarAlumnos', [], true)
+ 4 APPPATH\Controllers\Personas.php(64): view('alumnos/editarAlumnos', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->editar_alumnos('1220344')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 17:00:32 --> Attempt to read property "codigo" on array
+in APPPATH\Views\alumnos\editarAlumnos.php on line 22.
+ 1 APPPATH\Views\alumnos\editarAlumnos.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "codigo" on array', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php', 22)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('alumnos/editarAlumnos', [], true)
+ 5 APPPATH\Controllers\Personas.php(64): view('alumnos/editarAlumnos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->editar_alumnos('1220344')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 17:01:35 --> Undefined array key "codigo"
+in APPPATH\Views\alumnos\editarAlumnos.php on line 24.
+ 1 APPPATH\Views\alumnos\editarAlumnos.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo"', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php', 24)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\alumnos\\editarAlumnos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('alumnos/editarAlumnos', [], true)
+ 5 APPPATH\Controllers\Personas.php(64): view('alumnos/editarAlumnos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->editar_alumnos('1220344')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 17:05:12 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Putin WHERE codigo = 1220344' at line 1 in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE persona ...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE persona ...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE persona ...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Personas.php(75): CodeIgniter\Database\BaseConnection->query('UPDATE persona ...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Personas->actualizar_alumnos()
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-12-13 17:05:12 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Putin WHERE codigo = 1220344' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Personas.php(75): CodeIgniter\Database\BaseConnection->query('UPDATE persona SET codigo = 1220344, documento = 1023292122, nombres = Vladimir Putin WHERE codigo = 1220344')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->actualizar_alumnos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 17:06:29 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Putinnnn WHERE (codigo = 1220344)' at line 1 in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE persona ...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE persona ...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE persona ...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Personas.php(75): CodeIgniter\Database\BaseConnection->query('UPDATE persona ...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Personas->actualizar_alumnos()
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-12-13 17:06:29 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Putinnnn WHERE (codigo = 1220344)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Personas.php(75): CodeIgniter\Database\BaseConnection->query('UPDATE persona SET codigo = 1220344, documento = 1023292122, nombres = Vladimir Putinnnn WHERE (codigo = 1220344)')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->actualizar_alumnos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 17:08:01 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Putinnnn' at line 1 in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE persona ...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE persona ...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE persona ...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Personas.php(75): CodeIgniter\Database\BaseConnection->query('UPDATE persona ...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Personas->actualizar_alumnos()
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-12-13 17:08:01 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Putinnnn' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Personas.php(75): CodeIgniter\Database\BaseConnection->query('UPDATE persona SET codigo = 1220344, documento = 1023292122, nombres = Vladimir Putinnnn')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->actualizar_alumnos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 17:08:27 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Putin Marianoooo' at line 1 in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE persona ...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE persona ...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE persona ...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Personas.php(75): CodeIgniter\Database\BaseConnection->query('UPDATE persona ...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Personas->actualizar_alumnos()
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-12-13 17:08:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Putin Marianoooo' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Personas.php(75): CodeIgniter\Database\BaseConnection->query('UPDATE persona SET codigo = 1220344, documento = 1023292122, nombres = Vladimir Putin Marianoooo')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->actualizar_alumnos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 17:09:51 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '[ documento = 1023292122, nombres = Vladimir Putin Marianoooo ]' at line 1 in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE persona ...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE persona ...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE persona ...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Personas.php(75): CodeIgniter\Database\BaseConnection->query('UPDATE persona ...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Personas->actualizar_alumnos()
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-12-13 17:09:51 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '[ documento = 1023292122, nombres = Vladimir Putin Marianoooo ]' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Personas.php(75): CodeIgniter\Database\BaseConnection->query('UPDATE persona SET codigo = 1220344,[ documento = 1023292122, nombres = Vladimir Putin Marianoooo ]')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->actualizar_alumnos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 17:10:10 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '[ documento = 1023292122, nombres = Vladimir Putin Marianaaaaaaaaaaaaao ]' at line 1 in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE persona ...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE persona ...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE persona ...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Personas.php(75): CodeIgniter\Database\BaseConnection->query('UPDATE persona ...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Personas->actualizar_alumnos()
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-12-13 17:10:10 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '[ documento = 1023292122, nombres = Vladimir Putin Marianaaaaaaaaaaaaao ]' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Personas.php(75): CodeIgniter\Database\BaseConnection->query('UPDATE persona SET codigo = 1220344,[ documento = 1023292122, nombres = Vladimir Putin Marianaaaaaaaaaaaaao ]')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->actualizar_alumnos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 17:10:17 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Putin Marianaaaaaaaaaaaaao' at line 1 in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE persona ...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE persona ...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE persona ...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Personas.php(75): CodeIgniter\Database\BaseConnection->query('UPDATE persona ...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Personas->actualizar_alumnos()
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-12-13 17:10:17 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Putin Marianaaaaaaaaaaaaao' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Personas.php(75): CodeIgniter\Database\BaseConnection->query('UPDATE persona SET codigo = 1220344, documento = 1023292122, nombres = Vladimir Putin Marianaaaaaaaaaaaaao')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->actualizar_alumnos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 17:12:04 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Putin Marianaaaaaaaaaaaaao' at line 1 in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE persona ...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE persona ...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE persona ...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Personas.php(75): CodeIgniter\Database\BaseConnection->query('UPDATE persona ...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Personas->actualizar_alumnos()
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-12-13 17:12:04 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Putin Marianaaaaaaaaaaaaao' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Personas.php(75): CodeIgniter\Database\BaseConnection->query('UPDATE persona SET codigo =1220344, documento = 1023292122, nombres = Vladimir Putin Marianaaaaaaaaaaaaao')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->actualizar_alumnos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 17:12:18 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Cagon' at line 1 in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE persona ...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE persona ...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE persona ...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Personas.php(75): CodeIgniter\Database\BaseConnection->query('UPDATE persona ...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Personas->actualizar_alumnos()
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-12-13 17:12:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Cagon' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Personas.php(75): CodeIgniter\Database\BaseConnection->query('UPDATE persona SET codigo =1251985, documento = 2147483647, nombres = Daniel Cagon')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->actualizar_alumnos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 21:20:52 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Casass' at line 1 in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE persona ...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE persona ...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE persona ...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Personas.php(75): CodeIgniter\Database\BaseConnection->query('UPDATE persona ...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Personas->actualizar_alumnos()
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-12-13 21:20:52 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Casass' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Personas.php(75): CodeIgniter\Database\BaseConnection->query('UPDATE persona SET codigo =156722, documento = 1090223221, nombres = Armando Casass')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->actualizar_alumnos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 21:45:20 --> syntax error, unexpected token ")"
+in APPPATH\Controllers\Personas.php on line 75.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\prueba-universidad\\app\\Controllers\\Personas.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Personas')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Personas')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Personas', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 21:45:48 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' documento = '1090223221',' nombres = 'Armando Casass' at line 1 in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE persona ...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE persona ...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE persona ...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Personas.php(75): CodeIgniter\Database\BaseConnection->query('UPDATE persona ...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Personas->actualizar_alumnos()
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-12-13 21:45:48 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' documento = '1090223221',' nombres = 'Armando Casass' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Personas.php(75): CodeIgniter\Database\BaseConnection->query('UPDATE persona SET codigo = \'156722 \',\' documento = \'1090223221\',\' nombres = \'Armando Casass')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->actualizar_alumnos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 21:46:04 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' documento = '56534636',' nombres = 'Pedro hermoso' at line 1 in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE persona ...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE persona ...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE persona ...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Personas.php(75): CodeIgniter\Database\BaseConnection->query('UPDATE persona ...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Personas->actualizar_alumnos()
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-12-13 21:46:04 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' documento = '56534636',' nombres = 'Pedro hermoso' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Personas.php(75): CodeIgniter\Database\BaseConnection->query('UPDATE persona SET codigo = \'563463 \',\' documento = \'56534636\',\' nombres = \'Pedro hermoso')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->actualizar_alumnos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 21:46:28 --> Unclosed '(' on line 75
+in APPPATH\Controllers\Personas.php on line 93.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\prueba-universidad\\app\\Controllers\\Personas.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Personas')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Personas')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Personas', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 21:46:33 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' documento = '56534636',' nombres = 'Pedro hermoso' at line 1 in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE persona ...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE persona ...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE persona ...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Personas.php(75): CodeIgniter\Database\BaseConnection->query('UPDATE persona ...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Personas->actualizar_alumnos()
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-12-13 21:46:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' documento = '56534636',' nombres = 'Pedro hermoso' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Personas.php(75): CodeIgniter\Database\BaseConnection->query('UPDATE persona SET codigo = \'563463 \',\' documento = \'56534636\',\' nombres = \'Pedro hermoso')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->actualizar_alumnos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 21:48:50 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' documento = '56534636',' nombres = 'pedro becerro'' at line 1 in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE persona ...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE persona ...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE persona ...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Personas.php(75): CodeIgniter\Database\BaseConnection->query('UPDATE persona ...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Personas->actualizar_alumnos()
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-12-13 21:48:50 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' documento = '56534636',' nombres = 'pedro becerro'' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Personas.php(75): CodeIgniter\Database\BaseConnection->query('UPDATE persona SET codigo = \'563463\',\' documento = \'56534636\',\' nombres = \'pedro becerro\'')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->actualizar_alumnos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 21:49:40 --> mysqli_sql_exception: Duplicate entry '563463' for key 'PRIMARY' in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE persona ...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE persona ...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE persona ...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Personas.php(75): CodeIgniter\Database\BaseConnection->query('UPDATE persona ...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Personas->actualizar_alumnos()
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-12-13 21:49:40 --> Duplicate entry '563463' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Personas.php(75): CodeIgniter\Database\BaseConnection->query('UPDATE persona SET codigo = \'563463\', documento = \'56534636\', nombres = \'pedro becerro\'')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->actualizar_alumnos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 21:49:55 --> mysqli_sql_exception: Duplicate entry '563463' for key 'PRIMARY' in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE persona ...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE persona ...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE persona ...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Personas.php(75): CodeIgniter\Database\BaseConnection->query('UPDATE persona ...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Personas->actualizar_alumnos()
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-12-13 21:49:55 --> Duplicate entry '563463' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Personas.php(75): CodeIgniter\Database\BaseConnection->query('UPDATE persona SET codigo = \'563463\', documento = \'56534636\', nombres = \'pedro armando\'')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->actualizar_alumnos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 21:54:38 --> syntax error, unexpected double-quoted string "', documento = '", expecting ")"
+in APPPATH\Controllers\Personas.php on line 75.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\prueba-universidad\\app\\Controllers\\Personas.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Personas')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Personas')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Personas', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 21:55:27 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE codigo = '563463'' at line 1 in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE persona ...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE persona ...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE persona ...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Personas.php(75): CodeIgniter\Database\BaseConnection->query('UPDATE persona ...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Personas->actualizar_alumnos()
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-12-13 21:55:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE codigo = '563463'' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Personas.php(75): CodeIgniter\Database\BaseConnection->query('UPDATE persona SET codigo = \'563463\', documento = \'56534636\', nombres = \'pedro becerro\',  WHERE codigo = \'563463\'')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->actualizar_alumnos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 22:32:41 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`ejemplo`.`semestre`, CONSTRAINT `fk_semestre_personas` FOREIGN KEY (`codigo`) REFERENCES `persona` (`codigo`) ON DELETE NO ACTION ON UPDATE NO ACTION) in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM per...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM per...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM per...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Personas.php(94): CodeIgniter\Database\BaseConnection->query('DELETE FROM per...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Personas->borrar_alumnos('4563728')
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-12-13 22:32:41 --> Cannot delete or update a parent row: a foreign key constraint fails (`ejemplo`.`semestre`, CONSTRAINT `fk_semestre_personas` FOREIGN KEY (`codigo`) REFERENCES `persona` (`codigo`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Personas.php(94): CodeIgniter\Database\BaseConnection->query('DELETE FROM persona WHERE codigo = 4563728')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->borrar_alumnos('4563728')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 22:36:14 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`ejemplo`.`semestre`, CONSTRAINT `fk_semestre_personas` FOREIGN KEY (`codigo`) REFERENCES `persona` (`codigo`) ON DELETE NO ACTION ON UPDATE NO ACTION) in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `pe...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pe...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pe...')
+#3 C:\xampp\htdocs\prueba-universidad\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pe...', Array, false)
+#4 C:\xampp\htdocs\prueba-universidad\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\prueba-universidad\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\prueba-universidad\app\Controllers\Personas.php(90): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Personas->borrar_alumnos('4563728')
+#8 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+#9 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-13 22:36:14 --> Cannot delete or update a parent row: a foreign key constraint fails (`ejemplo`.`semestre`, CONSTRAINT `fk_semestre_personas` FOREIGN KEY (`codigo`) REFERENCES `persona` (`codigo`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `persona`
+WHERE `codigo` = :codigo:
+AND `codigo` IN :codigo.1:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\Personas.php(90): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->borrar_alumnos('4563728')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 22:41:43 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`ejemplo`.`semestre`, CONSTRAINT `fk_semestre_personas` FOREIGN KEY (`codigo`) REFERENCES `persona` (`codigo`) ON DELETE NO ACTION ON UPDATE NO ACTION) in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query(' DELETE FROM pe...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute(' DELETE FROM pe...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery(' DELETE FROM pe...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Personas.php(94): CodeIgniter\Database\BaseConnection->query(' DELETE FROM pe...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Personas->borrar_alumnos('4563728')
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-12-13 22:41:43 --> Cannot delete or update a parent row: a foreign key constraint fails (`ejemplo`.`semestre`, CONSTRAINT `fk_semestre_personas` FOREIGN KEY (`codigo`) REFERENCES `persona` (`codigo`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Personas.php(94): CodeIgniter\Database\BaseConnection->query(' DELETE FROM persona WHERE codigo = 4563728')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->borrar_alumnos('4563728')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 22:43:18 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'TABLE semestre CONSTRAINT 'fk_semetre_personas' FOREIGN KEY ('codigo') REFERE...' at line 1 in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query(' DELETE FROM pe...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute(' DELETE FROM pe...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery(' DELETE FROM pe...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Personas.php(94): CodeIgniter\Database\BaseConnection->query(' DELETE FROM pe...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Personas->borrar_alumnos('4563728')
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-12-13 22:43:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'TABLE semestre CONSTRAINT 'fk_semetre_personas' FOREIGN KEY ('codigo') REFERE...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Personas.php(94): CodeIgniter\Database\BaseConnection->query(' DELETE FROM persona WHERE codigo = 4563728 TABLE semestre CONSTRAINT \'fk_semetre_personas\' FOREIGN KEY (\'codigo\') REFERENCES persona (\'codigo\')')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->borrar_alumnos('4563728')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 22:43:31 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ALTER TABLE semestre CONSTRAINT 'fk_semetre_personas' FOREIGN KEY ('codigo') ...' at line 1 in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query(' DELETE FROM pe...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute(' DELETE FROM pe...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery(' DELETE FROM pe...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Personas.php(94): CodeIgniter\Database\BaseConnection->query(' DELETE FROM pe...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Personas->borrar_alumnos('4563728')
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-12-13 22:43:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ALTER TABLE semestre CONSTRAINT 'fk_semetre_personas' FOREIGN KEY ('codigo') ...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Personas.php(94): CodeIgniter\Database\BaseConnection->query(' DELETE FROM persona WHERE codigo = 4563728 ALTER TABLE semestre CONSTRAINT \'fk_semetre_personas\' FOREIGN KEY (\'codigo\') REFERENCES persona (\'codigo\')')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->borrar_alumnos('4563728')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 22:43:40 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ALTER TABLE semestre ADD CONSTRAINT 'fk_semetre_personas' FOREIGN KEY ('codig...' at line 1 in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query(' DELETE FROM pe...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute(' DELETE FROM pe...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery(' DELETE FROM pe...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Personas.php(94): CodeIgniter\Database\BaseConnection->query(' DELETE FROM pe...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Personas->borrar_alumnos('4563728')
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-12-13 22:43:40 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ALTER TABLE semestre ADD CONSTRAINT 'fk_semetre_personas' FOREIGN KEY ('codig...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Personas.php(94): CodeIgniter\Database\BaseConnection->query(' DELETE FROM persona WHERE codigo = 4563728 ALTER TABLE semestre ADD CONSTRAINT \'fk_semetre_personas\' FOREIGN KEY (\'codigo\') REFERENCES persona (\'codigo\')')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->borrar_alumnos('4563728')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 22:46:10 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ALTER TABLE semestre ADD CONSTRAINT 'fk_semetre_personas' FOREIGN KEY (codigo...' at line 1 in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query(' DELETE FROM pe...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute(' DELETE FROM pe...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery(' DELETE FROM pe...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Personas.php(94): CodeIgniter\Database\BaseConnection->query(' DELETE FROM pe...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Personas->borrar_alumnos('4563728')
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-12-13 22:46:10 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ALTER TABLE semestre ADD CONSTRAINT 'fk_semetre_personas' FOREIGN KEY (codigo...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Personas.php(94): CodeIgniter\Database\BaseConnection->query(' DELETE FROM persona WHERE codigo = 4563728 ALTER TABLE semestre ADD CONSTRAINT \'fk_semetre_personas\' FOREIGN KEY (codigo) REFERENCES persona (codigo)')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->borrar_alumnos('4563728')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-13 23:09:59 --> syntax error, unexpected token "return"
+in APPPATH\Controllers\Personas.php on line 98.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\prueba-universidad\\app\\Controllers\\Personas.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Personas')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Personas')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Personas', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 23:10:11 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`ejemplo`.`semestre`, CONSTRAINT `fk_semestre_personas` FOREIGN KEY (`codigo`) REFERENCES `persona` (`codigo`) ON DELETE NO ACTION ON UPDATE NO ACTION) in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query(' DELETE FROM pe...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute(' DELETE FROM pe...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery(' DELETE FROM pe...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Personas.php(94): CodeIgniter\Database\BaseConnection->query(' DELETE FROM pe...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Personas->borrar_alumnos('4563728')
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-12-13 23:10:11 --> Cannot delete or update a parent row: a foreign key constraint fails (`ejemplo`.`semestre`, CONSTRAINT `fk_semestre_personas` FOREIGN KEY (`codigo`) REFERENCES `persona` (`codigo`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Personas.php(94): CodeIgniter\Database\BaseConnection->query(' DELETE FROM persona WHERE codigo = 4563728 ')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->borrar_alumnos('4563728')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 23:10:31 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''fk_semetre_personas' FOREIGN KEY (codigo) REFERENCES persona (codigo)' at line 1 in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('ALTER TABLE sem...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('ALTER TABLE sem...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('ALTER TABLE sem...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Personas.php(94): CodeIgniter\Database\BaseConnection->query('ALTER TABLE sem...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Personas->borrar_alumnos('4563728')
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-12-13 23:10:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''fk_semetre_personas' FOREIGN KEY (codigo) REFERENCES persona (codigo)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Personas.php(94): CodeIgniter\Database\BaseConnection->query('ALTER TABLE semestre ADD CONSTRAINT \'fk_semetre_personas\' FOREIGN KEY (codigo) REFERENCES persona (codigo)')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->borrar_alumnos('4563728')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-13 23:11:43 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`ejemplo`.`semestre`, CONSTRAINT `fk_semestre_personas` FOREIGN KEY (`codigo`) REFERENCES `persona` (`codigo`) ON DELETE NO ACTION ON UPDATE NO ACTION) in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query(' DELETE FROM pe...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute(' DELETE FROM pe...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery(' DELETE FROM pe...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Personas.php(96): CodeIgniter\Database\BaseConnection->query(' DELETE FROM pe...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Personas->borrar_alumnos('4563728')
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-12-13 23:11:43 --> Cannot delete or update a parent row: a foreign key constraint fails (`ejemplo`.`semestre`, CONSTRAINT `fk_semestre_personas` FOREIGN KEY (`codigo`) REFERENCES `persona` (`codigo`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Personas.php(96): CodeIgniter\Database\BaseConnection->query(' DELETE FROM persona WHERE codigo = 4563728 ')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->borrar_alumnos('4563728')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

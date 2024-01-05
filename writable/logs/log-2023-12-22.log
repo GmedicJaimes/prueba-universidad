@@ -1,0 +1,131 @@
+ERROR - 2023-12-22 01:46:19 --> mysqli_sql_exception: Duplicate entry '123344-A' for key 'PRIMARY' in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO mat...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO mat...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO mat...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Materias.php(38): CodeIgniter\Database\BaseConnection->query('INSERT INTO mat...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Materias->guardar_materia()
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materias))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-12-22 01:46:19 --> Duplicate entry '123344-A' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Materias.php(38): CodeIgniter\Database\BaseConnection->query('INSERT INTO materia (codigo_materia, nombre, grupo) VALUES (\'123344\',\'Pensamiento Gerencial\',\'A\')')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Materias->guardar_materia()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materias))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 02:29:44 --> Undefined variable $alumnos
+in APPPATH\Views\materias\editarMaterias.php on line 22.
+ 1 APPPATH\Views\materias\editarMaterias.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alumnos', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\materias\\editarMaterias.php', 22)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\materias\\editarMaterias.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('materias/editarMaterias', [], true)
+ 5 APPPATH\Controllers\Materias.php(48): view('materias/editarMaterias')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Materias->editar_materia('123344')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materias))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 02:30:23 --> Undefined variable $alumnos
+in APPPATH\Views\materias\editarMaterias.php on line 22.
+ 1 APPPATH\Views\materias\editarMaterias.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alumnos', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\materias\\editarMaterias.php', 22)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\materias\\editarMaterias.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('materias/editarMaterias', [], true)
+ 5 APPPATH\Controllers\Materias.php(48): view('materias/editarMaterias')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Materias->editar_materia('123344')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materias))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 02:31:05 --> Undefined variable $materias
+in APPPATH\Views\materias\editarMaterias.php on line 22.
+ 1 APPPATH\Views\materias\editarMaterias.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $materias', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\materias\\editarMaterias.php', 22)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\materias\\editarMaterias.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('materias/editarMaterias', [], true)
+ 5 APPPATH\Controllers\Materias.php(48): view('materias/editarMaterias')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Materias->editar_materia('123344')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materias))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-22 02:41:58 --> mysqli_sql_exception: Table 'ejemplo.materias' doesn't exist in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM m...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Materias.php(51): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Materias->editar_materia('123344')
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materias))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-12-22 02:41:58 --> Table 'ejemplo.materias' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Materias.php(51): CodeIgniter\Database\BaseConnection->query('SELECT * FROM materias WHERE codigo_materia = 123344')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Materias->editar_materia('123344')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materias))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 02:42:28 --> Undefined array key "codigo"
+in APPPATH\Views\materias\editarMaterias.php on line 22.
+ 1 APPPATH\Views\materias\editarMaterias.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo"', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\materias\\editarMaterias.php', 22)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\materias\\editarMaterias.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('materias/editarMaterias', [], true)
+ 5 APPPATH\Controllers\Materias.php(57): view('materias/editarMaterias', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Materias->editar_materia('123344')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materias))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-22 15:36:27 --> mysqli_sql_exception: Duplicate entry '123344-A' for key 'PRIMARY' in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE materia ...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE materia ...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE materia ...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Materias.php(70): CodeIgniter\Database\BaseConnection->query('UPDATE materia ...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Materias->actualizar_materia()
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materias))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-12-22 15:36:27 --> Duplicate entry '123344-A' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Materias.php(70): CodeIgniter\Database\BaseConnection->query('UPDATE materia SET codigo_materia = \'123344\', nombre = \'Pensamiento Gerencial dddddddddd\', grupo = \'A\' WHERE codigo_materia = \'123344\'')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Materias->actualizar_materia()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materias))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-22 15:38:43 --> mysqli_sql_exception: Duplicate entry '123344-A' for key 'PRIMARY' in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE materia ...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE materia ...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE materia ...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Materias.php(70): CodeIgniter\Database\BaseConnection->query('UPDATE materia ...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Materias->actualizar_materia()
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materias))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-12-22 15:38:43 --> Duplicate entry '123344-A' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Materias.php(70): CodeIgniter\Database\BaseConnection->query('UPDATE materia SET codigo_materia = \'123344\', nombre = \'Pensamiento Gerencial dddddddddd\', grupo = \'A\' WHERE codigo_materia = \'123344\'')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Materias->actualizar_materia()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materias))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 15:39:09 --> syntax error, unexpected variable "$materias", expecting "," or ";"
+in APPPATH\Views\materias\editarMaterias.php on line 22.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('materias/editarMaterias', [], true)
+ 3 APPPATH\Controllers\Materias.php(57): view('materias/editarMaterias', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Materias->editar_materia('123344')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materias))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 15:39:44 --> Call to undefined method CodeIgniter\HTTP\Response::request()
+in APPPATH\Controllers\Materias.php on line 72.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Materias->actualizar_materia()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materias))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

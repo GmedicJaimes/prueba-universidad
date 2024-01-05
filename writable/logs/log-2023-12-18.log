@@ -1,0 +1,11 @@
+CRITICAL - 2023-12-18 23:16:19 --> Undefined variable $alumno
+in APPPATH\Views\Materias.php on line 40.
+ 1 APPPATH\Views\Materias.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alumno', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\Materias.php', 40)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\Materias.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('materias', [], true)
+ 5 APPPATH\Controllers\Materias.php(20): view('materias', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Materias->listar_materia()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materias))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

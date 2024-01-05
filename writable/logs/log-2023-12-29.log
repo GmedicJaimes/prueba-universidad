@@ -1,0 +1,36 @@
+ERROR - 2023-12-29 00:28:57 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM mat...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM mat...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM mat...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Materias.php(87): CodeIgniter\Database\BaseConnection->query('DELETE FROM mat...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Materias->borrar_materia('1234444')
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materias))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-12-29 00:28:57 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Materias.php(87): CodeIgniter\Database\BaseConnection->query('DELETE FROM materia WHERE codigo_materia = 1234444 AND grupo = ')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Materias->borrar_materia('1234444')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Materias))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-29 00:30:38 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`ejemplo`.`semestre`, CONSTRAINT `fk_semestre_personas` FOREIGN KEY (`codigo`) REFERENCES `persona` (`codigo`) ON DELETE NO ACTION ON UPDATE NO ACTION) in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE persona ...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE persona ...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE persona ...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Personas.php(77): CodeIgniter\Database\BaseConnection->query('UPDATE persona ...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Personas->actualizar_alumnos()
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-12-29 00:30:38 --> Cannot delete or update a parent row: a foreign key constraint fails (`ejemplo`.`semestre`, CONSTRAINT `fk_semestre_personas` FOREIGN KEY (`codigo`) REFERENCES `persona` (`codigo`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Personas.php(77): CodeIgniter\Database\BaseConnection->query('UPDATE persona SET codigo = \'1251981\', documento = \'1234644054\', nombres = \'Gulliano Jaimes\' WHERE codigo = \'1251988\'')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Personas->actualizar_alumnos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
