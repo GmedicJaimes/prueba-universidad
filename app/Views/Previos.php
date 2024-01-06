@@ -36,7 +36,7 @@
             <td><?= $previo['tipo_previo']?></td>
             <td><?= $previo['porcentaje']?>%</td>
             <td>
-            <a href='<?= base_url('editar-previo/' . $previo['tipo_previo'] ) ?>' class="btn btn-info" type="button">Editar</a>
+            <a href='<?= base_url('editar-previo/' . $previo['tipo_previo'] ); ?>' class="btn btn-info" type="button">Editar</a>
 
             /
 

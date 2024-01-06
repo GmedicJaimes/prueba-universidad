@@ -61,6 +61,6 @@ class Previos extends Controller
  
     $datos = ['previos' => $resultado];
 
-    return view('previos/editarPrevios', $datos);
+    return view('previos/editarPrevio', $datos);
   }
 }
