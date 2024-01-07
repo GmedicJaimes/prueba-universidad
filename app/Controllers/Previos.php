@@ -32,7 +32,7 @@ class Previos extends Controller
       'porcentajes' => $porcentaje
     ];
 
-    return view('previos/insertPrevio', $datos);
+    return view('previos/editarPrevio', $datos);
   }
 
 

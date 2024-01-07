@@ -17,17 +17,19 @@
     <h5 class="card-title">Datos a modificar</h5>
     <p class="card-text">
       
-      <form method="post" action="<?= site_url('/actualizar-materia') ?>" enctype="multipart/form-data">
+      <form method="post" action="<?= site_url('/actualizar-previo') ?>" enctype="multipart/form-data">
 
-        <input type="hidden" name="id" value="<?=$previos[0]["tipo_previo"]?>">
+        <input type="hidden" name="id" value="">
+
+        <?php print_r($previos)?>
 
         <div class="form-group">
           <label for="codigo_materia">Nombre del Previo: </label>
-          <input id="codigo_materia" value="<?=$previos[0]['tipo_previo'] ?>" class="form-control" type="text" name="codigo_materia">
+          <input id="codigo_materia" value="" class="form-control" type="text" name="codigo_materia">
         </div>
         <div class="form-group">
           <label for="nombre">Porcentaje: </label>
-          <input id="nombre" value="<?= $previos[0]['porcentaje'] ?>"  class="form-control" type="number" name="nombre">
+          <input id="nombre" value=""  class="form-control" type="number" name="nombre">
         </div>
        
         
@@ -36,7 +38,7 @@
     </p>
   </div>
 </div>
-<a href="<?= base_url('materia')?>" class="btn btn-success"> Back</a>
+<a href="<?= base_url('previos')?>" class="btn btn-success"> Back</a>
   </div>
 </body>
 </html>
