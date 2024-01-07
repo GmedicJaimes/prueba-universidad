@@ -101,3 +101,101 @@ in APPPATH\Views\previos\editarPrevio.php on line 30.
  6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Previos))
  7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-07 01:22:06 --> mysqli_sql_exception: Unknown column '$any' in 'where clause' in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM pre...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM pre...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM pre...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Previos.php(74): CodeIgniter\Database\BaseConnection->query('DELETE FROM pre...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Previos->borrar_previo('$any')
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Previos))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-07 01:22:06 --> Unknown column '$any' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Previos.php(74): CodeIgniter\Database\BaseConnection->query('DELETE FROM previos WHERE tipo_previo = $any')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Previos->borrar_previo('$any')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Previos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-07 01:22:18 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM pre...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM pre...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM pre...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Previos.php(74): CodeIgniter\Database\BaseConnection->query('DELETE FROM pre...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Previos->borrar_previo()
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Previos))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-07 01:22:19 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Previos.php(74): CodeIgniter\Database\BaseConnection->query('DELETE FROM previos WHERE tipo_previo = ')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Previos->borrar_previo()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Previos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-07 01:22:27 --> mysqli_sql_exception: Unknown column '$' in 'where clause' in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM pre...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM pre...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM pre...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Previos.php(74): CodeIgniter\Database\BaseConnection->query('DELETE FROM pre...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Previos->borrar_previo('$')
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Previos))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-07 01:22:27 --> Unknown column '$' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Previos.php(74): CodeIgniter\Database\BaseConnection->query('DELETE FROM previos WHERE tipo_previo = $')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Previos->borrar_previo('$')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Previos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-07 01:28:50 --> Array to string conversion
+in APPPATH\Views\Previos.php on line 43.
+ 1 APPPATH\Views\Previos.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\Previos.php', 43)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\Previos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('previos', [], true)
+ 5 APPPATH\Controllers\Previos.php(19): view('previos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Previos->listar_previos()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Previos))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-07 01:29:07 --> Undefined array key 0
+in APPPATH\Views\Previos.php on line 43.
+ 1 APPPATH\Views\Previos.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\Previos.php', 43)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\Previos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('previos', [], true)
+ 5 APPPATH\Controllers\Previos.php(19): view('previos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Previos->listar_previos()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Previos))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-07 01:29:26 --> Undefined array key 2
+in APPPATH\Views\Previos.php on line 50.
+ 1 APPPATH\Views\Previos.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 2', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\Previos.php', 50)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\Previos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('previos', [], true)
+ 5 APPPATH\Controllers\Previos.php(19): view('previos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Previos->listar_previos()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Previos))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-07 01:29:33 --> Undefined array key 2
+in APPPATH\Views\Previos.php on line 50.
+ 1 APPPATH\Views\Previos.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 2', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\Previos.php', 50)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\Previos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('previos', [], true)
+ 5 APPPATH\Controllers\Previos.php(19): view('previos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Previos->listar_previos()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Previos))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

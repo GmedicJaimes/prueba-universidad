@@ -32,7 +32,7 @@ class Previos extends Controller
       'porcentajes' => $porcentaje
     ];
 
-    return view('previos/editarPrevio', $datos);
+    return view('previos/insertPrevio', $datos);
   }
 
 
@@ -62,5 +62,17 @@ class Previos extends Controller
     $datos = ['previos' => $resultado];
 
     return view('previos/editarPrevio', $datos);
+  }
+
+
+  //* borrar previo
+
+  public function borrar_previo($tipo_previo = null){
+
+    $db = \Config\Database::connect();
+
+    $query = $db->query("DELETE FROM previos WHERE tipo_previo = $tipo_previo");
+
+    return $this->response->redirect(site_url('/previos'));
   }
 }
