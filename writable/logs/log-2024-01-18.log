@@ -1,0 +1,57 @@
+CRITICAL - 2024-01-18 02:20:53 --> Undefined constant "App\Controllers\codigo"
+in APPPATH\Controllers\Notas.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->listar_notas()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-18 02:21:15 --> Undefined constant "App\Controllers\codigo"
+in APPPATH\Controllers\Notas.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->listar_notas()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-18 02:21:40 --> Undefined constant "App\Controllers\codigo"
+in APPPATH\Controllers\Notas.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->listar_notas()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-18 02:21:46 --> syntax error, unexpected token ")"
+in APPPATH\Controllers\Notas.php on line 16.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\prueba-universidad\\app\\Controllers\\Notas.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Notas')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Notas')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Notas', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-18 02:23:23 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+in APPPATH\Controllers\Notas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->listar_notas()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-18 02:23:36 --> Undefined array key "codigo"
+in APPPATH\Controllers\Notas.php on line 20.
+ 1 APPPATH\Controllers\Notas.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo"', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Controllers\\Notas.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->listar_notas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-18 02:23:46 --> Undefined constant "App\Controllers\codigo"
+in APPPATH\Controllers\Notas.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->listar_notas()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-18 02:24:01 --> Undefined variable $notas
+in APPPATH\Views\Notas.php on line 36.
+ 1 APPPATH\Views\Notas.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $notas', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\Notas.php', 36)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\Notas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Notas', [], true)
+ 5 APPPATH\Controllers\Notas.php(30): view('Notas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->listar_notas()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

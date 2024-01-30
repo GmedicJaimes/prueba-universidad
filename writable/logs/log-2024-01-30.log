@@ -1,0 +1,44 @@
+CRITICAL - 2024-01-30 00:59:40 --> Undefined variable $personas
+in APPPATH\Views\Notas.php on line 30.
+ 1 APPPATH\Views\Notas.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $personas', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\Notas.php', 30)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\Notas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Notas', [], true)
+ 5 APPPATH\Controllers\Notas.php(20): view('Notas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->seleccionar_estudiante()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-30 01:00:12 --> Undefined variable $persona
+in APPPATH\Views\Notas.php on line 32.
+ 1 APPPATH\Views\Notas.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $persona', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\Notas.php', 32)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\Notas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Notas', [], true)
+ 5 APPPATH\Controllers\Notas.php(20): view('Notas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->seleccionar_estudiante()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-30 01:00:28 --> Undefined variable $persona
+in APPPATH\Views\Notas.php on line 32.
+ 1 APPPATH\Views\Notas.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $persona', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\Notas.php', 32)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\Notas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Notas', [], true)
+ 5 APPPATH\Controllers\Notas.php(20): view('Notas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->seleccionar_estudiante()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-30 01:45:16 --> Undefined variable $previo
+in APPPATH\Views\Notas.php on line 39.
+ 1 APPPATH\Views\Notas.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $previo', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\Notas.php', 39)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\Notas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Notas', [], true)
+ 5 APPPATH\Controllers\Notas.php(20): view('Notas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->seleccionar_estudiante()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

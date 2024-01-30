@@ -3,18 +3,19 @@ namespace App\Controllers;
 
 use CodeIgniter\Controller;
 use App\Models\Nota;
+use App\Models\Persona;
 
 class Notas extends Controller 
 {
-  public function listar_notas(){
+  public function seleccionar_estudiante(){
 
     $db = \Config\Database::connect();
 
-    $query = $db->query("SELECT * FROM nota ");
+    $queryPersona = $db->query("SELECT * FROM persona");
 
-    $resultado = $query->getResultArray();
+    $resultadoPersona = $queryPersona->getResultArray();
 
-    $datos = ["notas" => $resultado];
+    $datos = ["estudiantes" => $resultadoPersona];
 
     return view('Notas', $datos);
   }

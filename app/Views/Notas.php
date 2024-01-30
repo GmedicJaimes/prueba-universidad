@@ -16,35 +16,32 @@
 
   </nav>
 
-  <div class="container">
-    <a href="<?= base_url('/') ?>" class='btn btn-primary mt-3 mb-3'>Home</a>
+  <div class='container'>
 
-    <a href="<?= base_url("/insertar") ?>" class='btn btn-success mt-3 mb-3'>Insertar Notas</a>
-    
-    <table class="table table-dark table-striped">
-      <thead class=" text-center ">
-        <tr>
-          <th>Codigo Alumno</th>
-          <th>Codigo Materia</th>
-          <th>Tipo Previo</th>
-          <th>Nota Final</th>
-          <th>Fecha</th>
-  
-        </tr>
-      </thead>
-      <tbody class='text-center'>
-        <?php foreach ($notas as $nota) { ?>
-          <tr>
-            <td><?= $nota['codigo']?></td>
-            <td><?= $nota['codigo_materia']?></td>
-            <td><?= $nota['tipo_previo']?></td>
-            <td><?= $nota['nota']?></td>
-            <td><?= $nota['fecha_insert']?></td>
-          </tr>
-          <?php } ?>
-      </tbody>
-    </table>
-  </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Selecciona al estudiante para ver sus notas:</h3>
+        <p class="card-text">
+          
+          <form method="post" action="<?= site_url('/guardarSemestre') ?>" enctype="multipart/form-data">
+            <div class="form-group">
+              <label for="codigo">Estudiante: </label>
+              <select name="codigo" id="codigo" class="custom-select mr-sm-2">
+                <?php foreach ($estudiantes as $estudiante) { ?>
+
+                  <option value="<?= $estudiante["codigo"]; ?>"><?= $estudiante["codigo"] . " " . $estudiante["nombres"]?></option>
+                <?php } ?>  
+                  
+              </select>
+            </div>
+            
+            <a href='<?= base_url('notas-estudiante/' . $estudiante['codigo'] ) ?>' class="btn btn-success" type="button">Ver Notas</a>
+
+          </form>
+        </p>
+      </div>
+    </div>
+    <a href="<?= base_url('semestre')?>" class="btn btn-primary mt-3 mb-3"> Back</a>
 
 </body>
 </html>
