@@ -43,3 +43,4 @@ $routes->get('borrar-previo/(:string)', 'Previos::borrar_previo/$1');
 
 //? rutas notas
 $routes->get('notas' , 'Notas::seleccionar_estudiante');
+$routes->get('notas-estudiante/(:num)', 'Notas::notas_estudiante/$1');
