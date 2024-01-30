@@ -31,17 +31,17 @@
         </tr>
       </thead>
       <tbody class='text-center border'>
-        <?php foreach ($alumnos as $alumno) { ?>
+        <?php foreach ($notas as $nota) { ?>
           <tr>
-            <td ><?= $alumno['codigo']?></td>
-            <td ><?= $alumno['documento']; ?></td>
-            <td ><?= $alumno['nombres'] ?></td>
+            <td ><?= $nota['codigo']?></td>
+            <td ><?= $nota['documento']; ?></td>
+            <td ><?= $nota['nombres'] ?></td>
             <td >
-            <a href='<?= base_url('editar/' . $alumno['codigo']) ?>' class="btn btn-info" type="button">Editar</a>
+            <a href='<?= base_url('editar/' . $nota['codigo']) ?>' class="btn btn-info" type="button">Editar</a>
 
             /
 
-            <a href='<?= base_url('borrar/' . $alumno['codigo']) ?>' class="btn btn-danger" type="button">Borrar</a>
+            <a href='<?= base_url('borrar/' . $nota['codigo']) ?>' class="btn btn-danger" type="button">Borrar</a>
 
 
             </td>
