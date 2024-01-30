@@ -19,4 +19,19 @@ class Notas extends Controller
 
     return view('Notas', $datos);
   }
+
+
+  public function notas_estudiante($codigo = null){
+
+    $db = \Config\Database::connect();
+    
+    $queryNotas = $db->query("SELECT * FROM nota WHERE codigo = $codigo");
+
+    $resultadoNotas = $queryNotas->getResultArray();
+
+    $datos = ["notas" => $resultadoNotas];
+
+    return view('notas/notasAlumno', $datos);
+
+  }
 }

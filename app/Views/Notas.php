@@ -41,7 +41,7 @@
         </p>
       </div>
     </div>
-    <a href="<?= base_url('semestre')?>" class="btn btn-primary mt-3 mb-3"> Back</a>
+    <a href="<?= base_url('/')?>" class="btn btn-primary mt-3 mb-3"> Back</a>
 
 </body>
 </html>
