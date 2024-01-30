@@ -290,3 +290,75 @@ in SYSTEMPATH\Database\BaseConnection.php on line 647.
  3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
  4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-30 20:50:36 --> Undefined array key "codigo"
+in APPPATH\Views\notas\notasAlumno.php on line 25.
+ 1 APPPATH\Views\notas\notasAlumno.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo"', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\notas\\notasAlumno.php', 25)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\notas\\notasAlumno.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('notas/notasAlumno', [], true)
+ 5 APPPATH\Controllers\Notas.php(44): view('notas/notasAlumno', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->notas_estudiante('1251985')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-30 20:50:55 --> Undefined array key ""
+in APPPATH\Views\notas\notasAlumno.php on line 25.
+ 1 APPPATH\Views\notas\notasAlumno.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key ""', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\notas\\notasAlumno.php', 25)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\notas\\notasAlumno.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('notas/notasAlumno', [], true)
+ 5 APPPATH\Controllers\Notas.php(44): view('notas/notasAlumno', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->notas_estudiante('1251985')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-30 20:51:05 --> Array to string conversion
+in APPPATH\Views\notas\notasAlumno.php on line 25.
+ 1 APPPATH\Views\notas\notasAlumno.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\notas\\notasAlumno.php', 25)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\notas\\notasAlumno.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('notas/notasAlumno', [], true)
+ 5 APPPATH\Controllers\Notas.php(44): view('notas/notasAlumno', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->notas_estudiante('1251985')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-30 20:51:11 --> syntax error, unexpected variable "$estudiante"
+in APPPATH\Views\notas\notasAlumno.php on line 25.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('notas/notasAlumno', [], true)
+ 3 APPPATH\Controllers\Notas.php(44): view('notas/notasAlumno', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->notas_estudiante('1251985')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-30 20:53:50 --> Undefined array key "codigo "
+in APPPATH\Views\notas\notasAlumno.php on line 25.
+ 1 APPPATH\Views\notas\notasAlumno.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo "', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\notas\\notasAlumno.php', 25)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\notas\\notasAlumno.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('notas/notasAlumno', [], true)
+ 5 APPPATH\Controllers\Notas.php(44): view('notas/notasAlumno', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->notas_estudiante('1251985')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-30 21:25:23 --> Undefined array key "codigo"
+in APPPATH\Views\notas\notasAlumno.php on line 20.
+ 1 APPPATH\Views\notas\notasAlumno.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo"', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\notas\\notasAlumno.php', 20)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\notas\\notasAlumno.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('notas/notasAlumno', [], true)
+ 5 APPPATH\Controllers\Notas.php(44): view('notas/notasAlumno', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->notas_estudiante('1251988')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-30 21:26:40 --> Too few arguments to function CodeIgniter\Router\RouteCollection::get(), 1 passed in C:\xampp\htdocs\prueba-universidad\app\Config\Routes.php on line 47 and at least 2 expected
+in SYSTEMPATH\Router\RouteCollection.php on line 1016.
+ 1 APPPATH\Config\Routes.php(47): CodeIgniter\Router\RouteCollection->get('ingresar-nota/(:num)')
+ 2 SYSTEMPATH\Router\RouteCollection.php(344): require('C:\\xampp\\htdocs\\prueba-universidad\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

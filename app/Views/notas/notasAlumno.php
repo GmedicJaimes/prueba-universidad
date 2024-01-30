@@ -17,12 +17,12 @@
   </nav>
 
   <div class="container">
-    <a href="<?= base_url('/') ?>" class='btn btn-primary mt-3 mb-3'>Home</a>
+    <a href="<?= base_url('/notas') ?>" class='btn btn-primary mt-3 mb-3'>Home</a>
     
-    <a href="<?= base_url('/ingresar-nota') ?>" class='btn btn-success mt-3 mb-3'>Ingresar Notas</a>
+    <a href="<?= base_url('/ingresar-nota') . $estudiante[0]['codigo']?>" class='btn btn-success mt-3 mb-3'>Ingresar Notas</a>
     <table class="table table-dark table-striped ">
       <thead class="table-dark  text-center border">
-        <h2>Notas del estudiante</h2>
+        <h2>Notas del estudiante: <?= $estudiante[0]['codigo'] . ' ' . $estudiante[0]['nombres']?></h2>
        
         <tr>
           <th>Codigo Materia</th>
