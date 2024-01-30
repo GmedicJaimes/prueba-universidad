@@ -141,3 +141,152 @@ in APPPATH\Views\notas\notasAlumno.php on line 34.
  7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
  8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-30 20:11:19 --> Undefined array key "codigo"
+in APPPATH\Views\notas\notasAlumno.php on line 25.
+ 1 APPPATH\Views\notas\notasAlumno.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo"', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\notas\\notasAlumno.php', 25)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\notas\\notasAlumno.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('notas/notasAlumno', [], true)
+ 5 APPPATH\Controllers\Notas.php(41): view('notas/notasAlumno', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->notas_estudiante('1220344')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-30 20:11:35 --> Undefined variable $nota
+in APPPATH\Views\notas\notasAlumno.php on line 25.
+ 1 APPPATH\Views\notas\notasAlumno.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nota', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\notas\\notasAlumno.php', 25)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\notas\\notasAlumno.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('notas/notasAlumno', [], true)
+ 5 APPPATH\Controllers\Notas.php(41): view('notas/notasAlumno', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->notas_estudiante('1220344')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-30 20:11:46 --> Undefined array key "codigo"
+in APPPATH\Views\notas\notasAlumno.php on line 25.
+ 1 APPPATH\Views\notas\notasAlumno.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo"', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\notas\\notasAlumno.php', 25)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\notas\\notasAlumno.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('notas/notasAlumno', [], true)
+ 5 APPPATH\Controllers\Notas.php(41): view('notas/notasAlumno', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->notas_estudiante('1220344')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-30 20:12:07 --> Undefined array key 0
+in APPPATH\Views\notas\notasAlumno.php on line 25.
+ 1 APPPATH\Views\notas\notasAlumno.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\notas\\notasAlumno.php', 25)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\notas\\notasAlumno.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('notas/notasAlumno', [], true)
+ 5 APPPATH\Controllers\Notas.php(41): view('notas/notasAlumno', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->notas_estudiante('1220344')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-30 20:12:12 --> Undefined array key "codigo"
+in APPPATH\Views\notas\notasAlumno.php on line 25.
+ 1 APPPATH\Views\notas\notasAlumno.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo"', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\notas\\notasAlumno.php', 25)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\notas\\notasAlumno.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('notas/notasAlumno', [], true)
+ 5 APPPATH\Controllers\Notas.php(41): view('notas/notasAlumno', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->notas_estudiante('1220344')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-30 20:12:18 --> Undefined array key ""
+in APPPATH\Views\notas\notasAlumno.php on line 25.
+ 1 APPPATH\Views\notas\notasAlumno.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key ""', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\notas\\notasAlumno.php', 25)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\notas\\notasAlumno.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('notas/notasAlumno', [], true)
+ 5 APPPATH\Controllers\Notas.php(41): view('notas/notasAlumno', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->notas_estudiante('1220344')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-30 20:12:28 --> Cannot use [] for reading
+in APPPATH\Views\notas\notasAlumno.php on line 25.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-30 20:14:29 --> Undefined array key "codigo"
+in APPPATH\Views\notas\notasAlumno.php on line 25.
+ 1 APPPATH\Views\notas\notasAlumno.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo"', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\notas\\notasAlumno.php', 25)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\notas\\notasAlumno.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('notas/notasAlumno', [], true)
+ 5 APPPATH\Controllers\Notas.php(41): view('notas/notasAlumno', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->notas_estudiante('1220344')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-30 20:28:30 --> Undefined variable $previos
+in APPPATH\Views\notas\notasAlumno.php on line 29.
+ 1 APPPATH\Views\notas\notasAlumno.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $previos', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\notas\\notasAlumno.php', 29)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\notas\\notasAlumno.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('notas/notasAlumno', [], true)
+ 5 APPPATH\Controllers\Notas.php(40): view('notas/notasAlumno', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->notas_estudiante('1251985')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-30 20:29:45 --> Undefined variable $previos
+in APPPATH\Views\notas\notasAlumno.php on line 29.
+ 1 APPPATH\Views\notas\notasAlumno.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $previos', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\notas\\notasAlumno.php', 29)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\notas\\notasAlumno.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('notas/notasAlumno', [], true)
+ 5 APPPATH\Controllers\Notas.php(37): view('notas/notasAlumno', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->notas_estudiante('1251985')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-30 20:31:29 --> Undefined variable $previos
+in APPPATH\Views\notas\notasAlumno.php on line 29.
+ 1 APPPATH\Views\notas\notasAlumno.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $previos', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\notas\\notasAlumno.php', 29)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\notas\\notasAlumno.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('notas/notasAlumno', [], true)
+ 5 APPPATH\Controllers\Notas.php(37): view('notas/notasAlumno', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->notas_estudiante('1251985')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-30 20:31:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'codigo = 1251985' at line 1 in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM n...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM n...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM n...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Notas.php(28): CodeIgniter\Database\BaseConnection->query('SELECT * FROM n...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Notas->notas_estudiante('1251985')
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-30 20:31:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'codigo = 1251985' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Notas.php(28): CodeIgniter\Database\BaseConnection->query('SELECT * FROM nota, previos WHERE nota.tipo_previo = previos.tipo_previo codigo = 1251985')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->notas_estudiante('1251985')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-30 20:46:31 --> mysqli_sql_exception: Unknown column 'previos.tipo_previo' in 'where clause' in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM n...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM n...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM n...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Notas.php(28): CodeIgniter\Database\BaseConnection->query('SELECT * FROM n...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Notas->notas_estudiante('1251985')
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-30 20:46:31 --> Unknown column 'previos.tipo_previo' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Notas.php(28): CodeIgniter\Database\BaseConnection->query('SELECT * FROM nota WHERE nota.tipo_previo = previos.tipo_previo AND codigo = 1251985')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->notas_estudiante('1251985')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
