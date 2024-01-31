@@ -19,16 +19,14 @@
   <div class="container">
     <a href="<?= base_url('/notas') ?>" class='btn btn-primary mt-3 mb-3'>Home</a>
     
-    <a href="<?= base_url('/ingresar-nota') . $estudiante[0]['codigo']?>" class='btn btn-success mt-3 mb-3'>Ingresar Notas</a>
+    <a href="<?= base_url('ingresar-nota/' . $estudiante[0]['codigo']) ?>" class='btn btn-success mt-3 mb-3'>Ingresar Notas</a>
     <table class="table table-dark table-striped ">
       <thead class="table-dark  text-center border">
-        <h2>Notas del estudiante: <?= $estudiante[0]['codigo'] . ' ' . $estudiante[0]['nombres']?></h2>
+        <h2>Notas del estudiante: <?= $estudiante[0]['nombres'] . ' ' . $estudiante[0]['codigo']?></h2>
        
         <tr>
           <th>Codigo Materia</th>
-          <?php foreach ($previos as $previo) { ?>
-            <th><?= $previo["tipo_previo"]?></th>
-          <?php } ?>
+          <th>Tipo Previo</th>
           <th>Nota Final</th>
           <th>Fecha</th>
           <th>Accion</th>
@@ -39,11 +37,7 @@
         <?php foreach ($notas as $nota) { ?>
           <tr>
             <td ><?= $nota['codigo_materia']?></td>
-            
-            <?php foreach ($previos as $previo) { ?>
-              <td><?= $previo["tipo_previo"]?></td>
-            <?php } ?>
-            
+            <td><?= $nota["tipo_previo"]?></td>
             <td ><?= $nota['nota'] ?></td>
             <td><?= $nota['fecha_insert']?></td>
             <td >

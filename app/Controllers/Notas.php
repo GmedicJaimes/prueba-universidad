@@ -46,13 +46,29 @@ class Notas extends Controller
   }
 
 
-  public function ingresar_nota($codigo = null){
+  public function ingresar_nota(){
 
     $db = \Config\Database::connect();
     
-    $queryNotas = $db->query("SELECT * FROM nota WHERE codigo = $codigo");
+    $queryPersona = $db->query("SELECT * FROM persona");
+    $queryPrevios = $db->query("SELECT * FROM previos");
+    $queryNotas = $db->query("SELECT * FROM nota");
+    $queryMateria = $db->query("SELECT * FROM materia");
 
+    $resultadoNotas = $queryNotas->getResultArray();
+    $resultadoPrevios = $queryPrevios->getResultArray();
+    $resultadoPersona = $queryPersona->getResultArray();
+    $resultadoMaterias = $queryMateria->getResultArray();
+    
 
+    $datos = [
+      "notas" => $resultadoNotas,
+      "datos" => $resultadoMaterias,
+      "previos" => $resultadoPrevios,
+      "persona" => $resultadoPersona
+    ];
+
+    return view("notas/insertNotas" , $datos);
 
   }
 }

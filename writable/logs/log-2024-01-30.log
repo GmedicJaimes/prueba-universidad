@@ -362,3 +362,12 @@ in SYSTEMPATH\Router\RouteCollection.php on line 1016.
  4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
  5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-30 23:07:51 --> Invalid file: "notass/insertNotas.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('notass/insertNotas.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('notass/insertNotas', [], true)
+ 3 APPPATH\Controllers\Notas.php(59): view('notass/insertNotas', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->ingresar_nota('1251988')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
