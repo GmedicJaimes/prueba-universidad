@@ -37,7 +37,6 @@ $routes->get('previos', 'Previos::listar_previos');
 $routes->get('insertar-previos', 'Previos::insertar_previos');
 $routes->post('guardar-previos', 'Previos::guardar_previos');
 $routes->get('editar-previo/(:string)', 'Previos::editar_previos/$1');
-
 $routes->get('borrar-previo/(:string)', 'Previos::borrar_previo/$1');
 
 
@@ -45,3 +44,4 @@ $routes->get('borrar-previo/(:string)', 'Previos::borrar_previo/$1');
 $routes->get('notas' , 'Notas::seleccionar_estudiante');
 $routes->get('notas-estudiante/(:num)', 'Notas::notas_estudiante/$1');
 $routes->get('ingresar-nota/(:num)', 'Notas::ingresar_nota/$1');
+$routes->post('guardar-nota', 'Notas::guardar_nota');

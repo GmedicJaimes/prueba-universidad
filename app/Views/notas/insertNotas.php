@@ -13,11 +13,24 @@
     <h2 class="text-center text-primary">Formulario para insertar una Nota</h2>
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title">Ingrese los datos de la Nota</h5>
+        <h3 class="card-title">Ingrese la Nota para el estudiante: <?= $persona[0]['codigo'] . ' ' . $persona[0]['nombres']?></h3>
         <p class="card-text">
+
           
           <form method="post" action="<?= site_url('/guardar-nota') ?>" enctype="multipart/form-data">
             <div class="form-group">
+
+              <label for="codigo">Seleccione el Codigo:</label>
+
+              <select name="codigo" id="codigo" class="custom-select mr-sm-2">
+                
+                <?php foreach ($persona as $alumno) { ?>
+                  <option value="<?= $alumno["codigo"]; ?>"><?= $alumno["codigo"]?></option>
+                <?php } ?>  
+                  
+              </select>
+
+
               <label for="codigo_materia">Codigo Materia: </label>
 
               <select name="codigo_materia" id="codigo_materia" class="custom-select mr-sm-2">
@@ -27,6 +40,11 @@
                 <?php } ?>  
                   
               </select>
+              
+            </div>
+            <div class="form-group">
+              <label for="nota">Nota: </label>
+              <input id="nota" class="form-control" type="float" name="nota">
               
             </div>
             <div class="form-group">
@@ -41,9 +59,10 @@
               </select>
               
             </div>
+
             <div class="form-group">
-              <label for="nota">Nota: </label>
-              <input id="nota" class="form-control" type="float" name="nota">
+              <label for="fecha_insert">Fecha: </label>
+              <input id="fecha_insert" class="form-control" type="date" name="fecha_insert">
               
             </div>
             <button class="btn btn-success" type="submit">Guardar</button>
@@ -51,7 +70,7 @@
         </p>
       </div>
     </div>
-    <a href="<?= base_url('notas')?>" class="btn btn-primary mt-3 mb-3"> Back</a>
+    <a href="<?= base_url('notas-estudiante/' . $persona[0]['codigo'])?>" class="btn btn-primary mt-3 mb-3"> Back</a>
   </div>
 </body>
 </html>

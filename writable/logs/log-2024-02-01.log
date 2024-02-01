@@ -1,0 +1,92 @@
+CRITICAL - 2024-02-01 01:06:01 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\Notas.php on line 87.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\prueba-universidad\\app\\Controllers\\Notas.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Notas')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Notas')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Notas', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-01 01:15:10 --> syntax error, unexpected variable "$CODIGO_MATERIA"
+in APPPATH\Controllers\Notas.php on line 80.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\prueba-universidad\\app\\Controllers\\Notas.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Notas')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Notas')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Notas', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-01 01:15:20 --> syntax error, unexpected token "}", expecting ";"
+in APPPATH\Controllers\Notas.php on line 91.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\prueba-universidad\\app\\Controllers\\Notas.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Notas')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Notas')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Notas', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-01 01:17:40 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`ejemplo`.`nota`, CONSTRAINT `nota_ibfk_1` FOREIGN KEY (`codigo`) REFERENCES `persona` (`codigo`)) in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO not...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO not...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO not...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Notas.php(86): CodeIgniter\Database\BaseConnection->query('INSERT INTO not...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Notas->guardar_nota()
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-01 01:17:40 --> Cannot add or update a child row: a foreign key constraint fails (`ejemplo`.`nota`, CONSTRAINT `nota_ibfk_1` FOREIGN KEY (`codigo`) REFERENCES `persona` (`codigo`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Notas.php(86): CodeIgniter\Database\BaseConnection->query('INSERT INTO nota (codigo, codigo_materia, nota, tipo_previo, fecha_insert) VALUES (\'\',\'6453621\',\'Primer Previo\',\'3.3\',\'2024-02-01\')')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->guardar_nota()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-01 01:21:18 --> Undefined array key "codigo"
+in APPPATH\Views\notas\insertNotas.php on line 22.
+ 1 APPPATH\Views\notas\insertNotas.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "codigo"', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\notas\\insertNotas.php', 22)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\notas\\insertNotas.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('notas/insertNotas', [], true)
+ 5 APPPATH\Controllers\Notas.php(71): view('notas/insertNotas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->ingresar_nota('1220344')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-01 01:58:35 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO not...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO not...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO not...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Notas.php(88): CodeIgniter\Database\BaseConnection->query('INSERT INTO not...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Notas->guardar_nota()
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-01 01:58:35 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Notas.php(88): CodeIgniter\Database\BaseConnection->query('INSERT INTO nota (codigo, codigo_materia, nota, tipo_previo, fecha_insert) VALUES (\'1220344\',\'7216211\',\'Primer Previo\',\'\',\'2024-02-02\')')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->guardar_nota()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-01 02:00:28 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO not...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO not...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO not...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Notas.php(88): CodeIgniter\Database\BaseConnection->query('INSERT INTO not...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Notas->guardar_nota()
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-01 02:00:28 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Notas.php(88): CodeIgniter\Database\BaseConnection->query('INSERT INTO nota (codigo, codigo_materia, nota, tipo_previo, fecha_insert) VALUES (\'1251988\',\'6453621\',\'Tercera Nota\',\'5\',\'2024-02-01\')')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->guardar_nota()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

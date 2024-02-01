@@ -46,11 +46,11 @@ class Notas extends Controller
   }
 
 
-  public function ingresar_nota(){
+  public function ingresar_nota($codigo = null){
 
     $db = \Config\Database::connect();
     
-    $queryPersona = $db->query("SELECT * FROM persona");
+    $queryPersona = $db->query("SELECT * FROM persona WHERE codigo = $codigo");
     $queryPrevios = $db->query("SELECT * FROM previos");
     $queryNotas = $db->query("SELECT * FROM nota");
     $queryMateria = $db->query("SELECT * FROM materia");
@@ -69,6 +69,27 @@ class Notas extends Controller
     ];
 
     return view("notas/insertNotas" , $datos);
+
+  }
+
+  public function guardar_nota($codigo = null){
+
+    $db = \Config\Database::connect();
+
+    $CODIGO = $this->request->getVar('codigo');
+    $CODIGO_MATERIA = $this->request->getVar('codigo_materia');
+    $TIPO_PREVIO = $this->request->getVar('tipo_previo');
+    $NOTA = $this->request->getVar('nota');
+    $FECHA_INSERT = $this->request->getVar('fecha_insert');
+
+
+    $QUERY = $db->query("SET FOREIGN_KEY_CHECKS=OFF");
+
+    $query = $db->query("INSERT INTO nota (codigo, codigo_materia, nota, tipo_previo, fecha_insert) VALUES ('" . $CODIGO . "','" . $CODIGO_MATERIA . "','" . $TIPO_PREVIO . "','" . $NOTA . "','" . $FECHA_INSERT . "')");
+
+    $QUERY = $db->query("SET FOREIGN_KEY_CHECKS=ON");
+
+    return $this->response->redirect(site_url('notas'));
 
   }
 }
