@@ -1,0 +1,90 @@
+ERROR - 2024-02-02 01:22:52 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO not...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO not...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO not...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Notas.php(88): CodeIgniter\Database\BaseConnection->query('INSERT INTO not...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Notas->guardar_nota()
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-02 01:22:53 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Notas.php(88): CodeIgniter\Database\BaseConnection->query('INSERT INTO nota (codigo, codigo_materia, nota, tipo_previo, fecha_insert) VALUES (\'1220344\',\'2123333\',\'Examen Final\',\'5\',\'2024-02-01\')')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->guardar_nota()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-02 01:26:28 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO not...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO not...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO not...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Notas.php(88): CodeIgniter\Database\BaseConnection->query('INSERT INTO not...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Notas->guardar_nota()
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-02 01:26:28 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Notas.php(88): CodeIgniter\Database\BaseConnection->query('INSERT INTO nota (codigo, codigo_materia, nota, tipo_previo, fecha_insert) VALUES (\'1251985\',\'2123333\',\'Primer Previo\',\'3.6\',\'2024-02-15\')')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->guardar_nota()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-02 01:38:16 --> mysqli_sql_exception: Table 'ejemplo.nota' doesn't exist in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO not...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO not...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO not...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Notas.php(88): CodeIgniter\Database\BaseConnection->query('INSERT INTO not...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Notas->guardar_nota()
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-02 01:38:16 --> Table 'ejemplo.nota' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Notas.php(88): CodeIgniter\Database\BaseConnection->query('INSERT INTO nota (codigo, codigo_materia, nota, tipo_previo, fecha_insert) VALUES (\'1251985\',\'2123333\',\'Primer Previo\',\'3.6\',\'2024-02-15\')')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->guardar_nota()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-02 01:38:18 --> mysqli_sql_exception: Table 'ejemplo.nota' doesn't exist in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM n...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM n...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM n...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Notas.php(55): CodeIgniter\Database\BaseConnection->query('SELECT * FROM n...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Notas->ingresar_nota('1251985')
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-02 01:38:18 --> Table 'ejemplo.nota' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Notas.php(55): CodeIgniter\Database\BaseConnection->query('SELECT * FROM nota')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->ingresar_nota('1251985')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-02 01:38:25 --> mysqli_sql_exception: Table 'ejemplo.nota' doesn't exist in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM n...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM n...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM n...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Notas.php(28): CodeIgniter\Database\BaseConnection->query('SELECT * FROM n...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Notas->notas_estudiante('1220344')
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-02 01:38:25 --> Table 'ejemplo.nota' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Notas.php(28): CodeIgniter\Database\BaseConnection->query('SELECT * FROM nota WHERE codigo = 1220344')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->notas_estudiante('1220344')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

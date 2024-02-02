@@ -85,7 +85,7 @@ class Notas extends Controller
 
     $QUERY = $db->query("SET FOREIGN_KEY_CHECKS=OFF");
 
-    $query = $db->query("INSERT INTO nota (codigo, codigo_materia, nota, tipo_previo, fecha_insert) VALUES ('" . $CODIGO . "','" . $CODIGO_MATERIA . "','" . $TIPO_PREVIO . "','" . $NOTA . "','" . $FECHA_INSERT . "')");
+    $query = $db->query("INSERT INTO nota (codigo, codigo_materia, nota, tipo_previo, fecha_insert) VALUES ('" . $CODIGO . "','" . $CODIGO_MATERIA . "','" . $NOTA . "','" . $TIPO_PREVIO . "','" . $FECHA_INSERT . "')");
 
     $QUERY = $db->query("SET FOREIGN_KEY_CHECKS=ON");
 
