@@ -21,15 +21,13 @@
 
         <input type="hidden" name="id" value="">
 
-        <?php print_r($previos)?>
-
         <div class="form-group">
           <label for="codigo_materia">Nombre del Previo: </label>
-          <input id="codigo_materia" value="" class="form-control" type="text" name="codigo_materia">
+          <input id="codigo_materia" value="<?= $previos[0]['tipo_previo']?>" class="form-control" type="text" name="codigo_materia">
         </div>
         <div class="form-group">
           <label for="nombre">Porcentaje: </label>
-          <input id="nombre" value=""  class="form-control" type="number" name="nombre">
+          <input id="nombre" value="<?= $previos[0]['porcentaje']?>"  class="form-control" type="number" name="nombre">
         </div>
        
         

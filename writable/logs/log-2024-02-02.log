@@ -88,3 +88,9 @@ in SYSTEMPATH\Database\BaseConnection.php on line 647.
  3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
  4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-02 20:13:45 --> Call to undefined function App\Controllers\replace()
+in APPPATH\Controllers\Previos.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Previos->editar_previos('Examen_Final')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Previos))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

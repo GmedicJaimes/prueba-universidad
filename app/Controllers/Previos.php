@@ -55,7 +55,7 @@ class Previos extends Controller
 
     $db = \Config\Database::connect();
 
-    $query = $db->query("SELECT * FROM previos WHERE tipo_previo = $tipo_previo");
+    $query = $db->query("SELECT * FROM previos WHERE tipo_previo = '{$tipo_previo}'");
 
     $resultado = $query->getResultArray();
  

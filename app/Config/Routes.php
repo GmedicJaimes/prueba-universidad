@@ -36,8 +36,8 @@ $routes->post("guardarSemestre" , "Semestres::guardar_semestre");
 $routes->get('previos', 'Previos::listar_previos');
 $routes->get('insertar-previos', 'Previos::insertar_previos');
 $routes->post('guardar-previos', 'Previos::guardar_previos');
-$routes->get('editar-previo/(:string)', 'Previos::editar_previos/$1');
-$routes->get('borrar-previo/(:string)', 'Previos::borrar_previo/$1');
+$routes->get('editar-previo/(:any)', 'Previos::editar_previos/$1');
+$routes->get('borrar-previo/(:any)', 'Previos::borrar_previo/$1');
 
 
 //? rutas notas
