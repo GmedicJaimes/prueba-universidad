@@ -37,7 +37,7 @@ $routes->get('previos', 'Previos::listar_previos');
 $routes->get('insertar-previos', 'Previos::insertar_previos');
 $routes->post('guardar-previos', 'Previos::guardar_previos');
 $routes->get('editar-previo/(:any)', 'Previos::editar_previos/$1');
-$routes->get('borrar-previo/(:any)', 'Previos::borrar_previo/$1');
+$routes->get('borrar-previo/(:num)', 'Previos::borrar_previo/$1');
 
 
 //? rutas notas

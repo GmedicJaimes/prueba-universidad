@@ -58,15 +58,13 @@ class Previos extends Controller
 
   //* borrar previo
 
-  public function borrar_previo($tipo_previo = null){
-
-    $tipo_previo = str_replace('', '-', $tipo_previo);
+  public function borrar_previo($id_previos = null){
 
     $db = \Config\Database::connect();
 
     $QUERY = $db->query("SET FOREIGN_KEY_CHECKS=OFF");
 
-    $query = $db->query("DELETE FROM previos WHERE tipo_previo = {$tipo_previo}");
+    $query = $db->query("DELETE FROM previos WHERE id_previos = {$id_previos}");
 
     return $this->response->redirect(site_url('/previos'));
   }

@@ -40,7 +40,7 @@
 
               /
 
-              <a href='<?= base_url('borrar-previo/' . $previo['tipo_previo'] ); ?>' class="btn btn-danger" type="button">Borrar</a>
+              <a href='<?= base_url('borrar-previo/' . $previo['id_previos'] ); ?>' class="btn btn-danger" type="button">Borrar</a>
             </td>
           </tr>
           <?php } ?>
