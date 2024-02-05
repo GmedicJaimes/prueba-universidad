@@ -26,10 +26,12 @@
        
         <tr>
           <th>Codigo Materia</th>
-          <th>Tipo Previo</th>
-          <th>Nota Final</th>
+          <th>Primer Previo</th>
+          <th>Segundo Previo</th>
+          <th>Tercera Nota</th>
+          <th>Examen Final</th>
+          <th>Definitiva</th>
           <th>Fecha</th>
-          <th>Primer Previo </th>
           <th>Accion</th>
   
         </tr>
@@ -39,11 +41,28 @@
           <tr>
             <td ><?= $nota['codigo_materia']?></td>
             <td><?= $nota["tipo_previo"]?></td>
-            <td ><?= $nota['nota'] ?></td>
             <td><?= $nota['fecha_insert']?></td>
-            <td ><?php if($nota["tipo_previo"] == 'Primer Previo') 
-            {echo $nota['nota'];}  
-            ?></td>
+            <td >
+              <?php if($nota["tipo_previo"] == 'Primer Previo') 
+                {echo $nota['nota'];}  
+                ?>
+            </td>
+            <td >
+              <?php if($nota["tipo_previo"] == 'Segundo Previo') 
+                {echo $nota['nota'];}  
+                ?>
+            </td>
+            <td >
+              <?php if($nota["tipo_previo"] == 'Tercera Nota') 
+                {echo $nota['nota'];}  
+                ?>
+            </td>
+            <td >
+              <?php if($nota["tipo_previo"] == 'Examen Final') 
+                {echo $nota['nota'];}  
+                ?>
+            </td>
+            <td ><?= $nota['nota'] ?></td>
             <td >
               <a href='<?= base_url('editar/' . $nota['codigo']) ?>' class="btn btn-info" type="button">Editar</a>
             </td>
