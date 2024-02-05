@@ -23,16 +23,7 @@ class Previos extends Controller
 
   public function insertar_previos(){
 
-    $previos = ['Primer Previo' , 'Segundo Previo', 'Tercera Nota', 'Examen Final'];
-
-    $porcentaje = [30, 10, 20];
-
-    $datos = [
-      'previos' => $previos,
-      'porcentajes' => $porcentaje
-    ];
-
-    return view('previos/insertPrevio', $datos);
+    return view('previos/insertPrevio');
   }
 
 
@@ -70,6 +61,8 @@ class Previos extends Controller
   public function borrar_previo($tipo_previo = null){
 
     $db = \Config\Database::connect();
+
+    $QUERY = $db->query("SET FOREIGN_KEY_CHECKS=OFF");
 
     $query = $db->query("DELETE FROM previos WHERE tipo_previo = $tipo_previo");
 

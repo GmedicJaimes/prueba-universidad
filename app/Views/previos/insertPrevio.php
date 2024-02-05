@@ -25,24 +25,12 @@
           <form method="post" action="<?= site_url('/guardar-previos') ?>" enctype="multipart/form-data">
             <div class="form-group">
               <label for="tipo_previo">Tipo de previo: </label>
-              <select name="tipo_previo" id="tipo_previo" class="custom-select mr-sm-2">
-                
-              <?php for($i = 0; $i < count($previos); $i++){ ?>
-
-                 <option value="<?= $previos[$i]; ?>"><?= $previos[$i]?></option>
-              <?php } ?>  
-                  
-              </select>
+              <input name="tipo_previo" id="tipo_previo" class="form-control" type="text">
+              
             </div>
             <div class="form-group">
               <label for="porcentaje">Porcentaje: </label>
-              <select name="porcentaje" id="porcentaje" class="custom-select mr-sm-2">
-                <?php for($i = 0; $i < count($porcentajes); $i++){ ?>
-
-                 <option value="<?= $porcentajes[$i]; ?>"><?= $porcentajes[$i]?>%</option>
-              <?php } ?>
-                  
-              </select>
+              <input type="text" name="porcentaje" id="porcentaje" class="form-control">
             </div>
             
             <button class="btn btn-success" type="submit">Guardar</button>
