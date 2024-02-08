@@ -34,27 +34,25 @@ class Previos extends Controller
     $PREVIO = $this->request->getVar('tipo_previo');
     $PORCENTAJE = $this->request->getVar('porcentaje');
 
-    $porcentajeAgregado = $PORCENTAJE;
     $porcentajeDisponible = 100;
 
-    if($porcentajeAgregado <= $porcentajeDisponible){
+    if($PORCENTAJE <= $porcentajeDisponible){
       
       $examen = [
         'tipo' => $PREVIO,
-        'porcentaje' => $porcentajeAgregado
+        'porcentaje' => $PORCENTAJE
       ];
       
+      $porcentajeDisponible -= $PORCENTAJE;
+
       $query = $db->query("INSERT INTO previos (tipo_previo, porcentaje) VALUES ('" . $examen['tipo'] . "','" . $examen['porcentaje'] . "')");
+  
       
-      $porcentajeDisponible -= $porcentajeAgregado;
-
     } else {
-
-      echo "El porcentaje agregado es mayor que el disponible. Por favor, ingresa un porcentaje válido.";
-
+      echo "<script>alert('El porcentaje agregado es mayor que el disponible. Por favor, ingresa un porcentaje válido.')</script>";
     }
 
-    print_r($porcentajeDisponible);
+
 
     return $this->response->redirect(site_url('/previos'));
 

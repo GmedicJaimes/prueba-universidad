@@ -80,12 +80,11 @@ class Notas extends Controller
     $CODIGO_MATERIA = $this->request->getVar('codigo_materia');
     $TIPO_PREVIO = $this->request->getVar('tipo_previo');
     $NOTA = $this->request->getVar('nota');
-    $FECHA_INSERT = $this->request->getVar('fecha_insert');
 
 
     $QUERY = $db->query("SET FOREIGN_KEY_CHECKS=OFF");
 
-    $query = $db->query("INSERT INTO nota (codigo, codigo_materia, nota, tipo_previo, fecha_insert) VALUES ('" . $CODIGO . "','" . $CODIGO_MATERIA . "','" . $NOTA . "','" . $TIPO_PREVIO . "','" . $FECHA_INSERT . "')");
+    $query = $db->query("INSERT INTO nota (codigo, codigo_materia, nota, tipo_previo, fecha_insert) VALUES ('" . $CODIGO . "','" . $CODIGO_MATERIA . "','" . $NOTA . "','" . $TIPO_PREVIO . "',' NOW() ')");
 
     $QUERY = $db->query("SET FOREIGN_KEY_CHECKS=ON");
 

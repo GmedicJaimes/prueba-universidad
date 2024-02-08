@@ -40,8 +40,6 @@
         <?php foreach ($notas as $nota) { ?>
           <tr>
             <td ><?= $nota['codigo_materia']?></td>
-            <td><?= $nota["tipo_previo"]?></td>
-            <td><?= $nota['fecha_insert']?></td>
             <td >
               <?php if($nota["tipo_previo"] == 'Primer Previo') 
                 {echo $nota['nota'];}  
@@ -63,6 +61,7 @@
                 ?>
             </td>
             <td ><?= $nota['nota'] ?></td>
+            <td><?= $nota['fecha_insert']?></td>
             <td >
               <a href='<?= base_url('editar/' . $nota['codigo']) ?>' class="btn btn-info" type="button">Editar</a>
             </td>

@@ -60,11 +60,7 @@
               
             </div>
 
-            <div class="form-group">
-              <label for="fecha_insert">Fecha: </label>
-              <input id="fecha_insert" class="form-control" type="date" name="fecha_insert">
-              
-            </div>
+            
             <button class="btn btn-success" type="submit">Guardar</button>
           </form>
         </p>
