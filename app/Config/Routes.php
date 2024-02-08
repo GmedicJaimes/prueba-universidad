@@ -37,11 +37,12 @@ $routes->get('previos', 'Previos::listar_previos');
 $routes->get('insertar-previos', 'Previos::insertar_previos');
 $routes->post('guardar-previos', 'Previos::guardar_previos');
 $routes->get('editar-previo/(:any)', 'Previos::editar_previos/$1');
+//ruta actualizar
 $routes->get('borrar-previo/(:num)', 'Previos::borrar_previo/$1');
 
 
 //? rutas notas
-$routes->get('notas' , 'Notas::seleccionar_estudiante');
+$routes->get('notas', 'Notas::seleccionar_estudiante');
 $routes->get('notas-estudiante/(:num)', 'Notas::notas_estudiante/$1');
 $routes->get('ingresar-nota/(:num)', 'Notas::ingresar_nota/$1');
 $routes->post('guardar-nota', 'Notas::guardar_nota');

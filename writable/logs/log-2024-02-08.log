@@ -1,0 +1,90 @@
+CRITICAL - 2024-02-08 13:52:37 --> syntax error, unexpected token "=", expecting "]"
+in APPPATH\Controllers\Previos.php on line 43.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\prueba-universidad\\app\\Controllers\\Previos.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Previos')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Previos')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Previos', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 13:53:54 --> Unsupported operand types: int - string
+in APPPATH\Controllers\Previos.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Previos->guardar_previos()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Previos))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 13:54:14 --> Unsupported operand types: int - string
+in APPPATH\Controllers\Previos.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Previos->guardar_previos()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Previos))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 13:54:59 --> Unsupported operand types: int - string
+in APPPATH\Controllers\Previos.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Previos->guardar_previos()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Previos))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 13:55:03 --> Unsupported operand types: int - string
+in APPPATH\Controllers\Previos.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Previos->guardar_previos()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Previos))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 13:55:12 --> Unsupported operand types: int - string
+in APPPATH\Controllers\Previos.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Previos->guardar_previos()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Previos))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 13:55:15 --> Unsupported operand types: int - string
+in APPPATH\Controllers\Previos.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Previos->guardar_previos()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Previos))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 13:56:23 --> Unsupported operand types: int - string
+in APPPATH\Controllers\Previos.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Previos->guardar_previos()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Previos))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 13:56:33 --> Unsupported operand types: int - string
+in APPPATH\Controllers\Previos.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Previos->guardar_previos()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Previos))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 13:57:05 --> Unsupported operand types: int - string
+in APPPATH\Controllers\Previos.php on line 37.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Previos->guardar_previos()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Previos))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 13:57:59 --> Undefined variable $porcentajeAgregado
+in APPPATH\Controllers\Previos.php on line 43.
+ 1 APPPATH\Controllers\Previos.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $porcentajeAgregado', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Controllers\\Previos.php', 43)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Previos->guardar_previos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Previos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 13:58:29 --> Array to string conversion
+in APPPATH\Controllers\Previos.php on line 47.
+ 1 APPPATH\Controllers\Previos.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Controllers\\Previos.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Previos->guardar_previos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Previos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 14:51:55 --> Unsupported operand types: string - int
+in APPPATH\Controllers\Previos.php on line 49.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Previos->guardar_previos()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Previos))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 14:58:05 --> Undefined variable $porcentajeNuevo
+in APPPATH\Controllers\Previos.php on line 49.
+ 1 APPPATH\Controllers\Previos.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $porcentajeNuevo', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Controllers\\Previos.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Previos->guardar_previos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Previos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

@@ -27,14 +27,34 @@ class Previos extends Controller
   }
 
 
-  public function guardar_previos(){
+  public function guardar_previos(){ 
 
     $db = \Config\Database::connect();
 
     $PREVIO = $this->request->getVar('tipo_previo');
     $PORCENTAJE = $this->request->getVar('porcentaje');
 
-    $query = $db->query("INSERT INTO previos (tipo_previo, porcentaje) VALUES ('" . $PREVIO . "','" . $PORCENTAJE . "')");
+    $porcentajeAgregado = $PORCENTAJE;
+    $porcentajeDisponible = 100;
+
+    if($porcentajeAgregado <= $porcentajeDisponible){
+      
+      $examen = [
+        'tipo' => $PREVIO,
+        'porcentaje' => $porcentajeAgregado
+      ];
+      
+      $query = $db->query("INSERT INTO previos (tipo_previo, porcentaje) VALUES ('" . $examen['tipo'] . "','" . $examen['porcentaje'] . "')");
+      
+      $porcentajeDisponible -= $porcentajeAgregado;
+
+    } else {
+
+      echo "El porcentaje agregado es mayor que el disponible. Por favor, ingresa un porcentaje válido.";
+
+    }
+
+    print_r($porcentajeDisponible);
 
     return $this->response->redirect(site_url('/previos'));
 
