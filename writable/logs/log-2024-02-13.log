@@ -1,0 +1,6 @@
+CRITICAL - 2024-02-13 01:18:05 --> Object of class stdClass could not be converted to string
+in APPPATH\Controllers\Previos.php on line 47.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Previos->guardar_previos()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Previos))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

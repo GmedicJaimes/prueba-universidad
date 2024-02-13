@@ -37,22 +37,29 @@ class Previos extends Controller
     $porcentajeDisponible = 100;
 
     if($PORCENTAJE <= $porcentajeDisponible){
-      
-      $examen = [
-        'tipo' => $PREVIO,
-        'porcentaje' => $PORCENTAJE
-      ];
-      
-      $porcentajeDisponible -= $PORCENTAJE;
 
-      $query = $db->query("INSERT INTO previos (tipo_previo, porcentaje) VALUES ('" . $examen['tipo'] . "','" . $examen['porcentaje'] . "')");
+      $existePrevio = $db->query("SELECT * FROM previos WHERE tipo_previo = '" . $PREVIO . "'")->getRow();
+
+      $existePorcentaje = $db->query("SELECT * FROM previos WHERE porcentaje = '" . $PORCENTAJE . "'")->getRow();
+
+
+      if($existePrevio || $existePorcentaje){
+        echo "<script>alert('Error, el previo ya existe'.')</script>";
+      } else {
+
+        $examen = [
+          'tipo' => $PREVIO,
+          'porcentaje' => $PORCENTAJE
+        ];
+        
+        $porcentajeDisponible = $existePorcentaje - $PORCENTAJE;
   
-      
+        $query = $db->query("INSERT INTO previos (tipo_previo, porcentaje) VALUES ('" . $examen['tipo'] . "','" . $examen['porcentaje'] . "')");
+      }
+
     } else {
       echo "<script>alert('El porcentaje agregado es mayor que el disponible. Por favor, ingresa un porcentaje válido.')</script>";
     }
-
-
 
     return $this->response->redirect(site_url('/previos'));
 
