@@ -40,11 +40,12 @@ class Previos extends Controller
 
       $existePrevio = $db->query("SELECT * FROM previos WHERE tipo_previo = '" . $PREVIO . "'")->getRow();
 
-      $existePorcentaje = $db->query("SELECT * FROM previos WHERE porcentaje = '" . $PORCENTAJE . "'")->getRow();
+      // $existePrevio = $db->query("SELECT * FROM previos WHERE tipo_previo = '" . $PREVIO . "'")->getRow();
 
+      if($existePrevio){
 
-      if($existePrevio || $existePorcentaje){
-        echo "<script>alert('Error, el previo ya existe'.')</script>";
+        echo "Error, el previo ya existe";
+
       } else {
 
         $examen = [
@@ -52,13 +53,23 @@ class Previos extends Controller
           'porcentaje' => $PORCENTAJE
         ];
         
-        $porcentajeDisponible = $existePorcentaje - $PORCENTAJE;
+        $porcentajeDisponible -= $PORCENTAJE;
   
         $query = $db->query("INSERT INTO previos (tipo_previo, porcentaje) VALUES ('" . $examen['tipo'] . "','" . $examen['porcentaje'] . "')");
       }
 
     } else {
-      echo "<script>alert('El porcentaje agregado es mayor que el disponible. Por favor, ingresa un porcentaje válido.')</script>";
+
+      echo "El porcentaje agregado es mayor que el disponible. Por favor, ingresa un porcentaje válido.'";
+
+    }
+
+    $sumaPorcentajes = $db->query("SELECT SUM(porcentaje) as total FROM previos")->getRow();
+
+    if($sumaPorcentajes->total != $porcentajeDisponible){
+
+      echo "Lo siento, la suma de los porcentajes da 100%";
+
     }
 
     return $this->response->redirect(site_url('/previos'));

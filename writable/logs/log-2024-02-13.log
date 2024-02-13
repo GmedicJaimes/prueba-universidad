@@ -4,3 +4,10 @@ in APPPATH\Controllers\Previos.php on line 47.
  2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Previos))
  3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-13 01:35:22 --> Undefined variable $existePorcentaje
+in APPPATH\Controllers\Previos.php on line 54.
+ 1 APPPATH\Controllers\Previos.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $existePorcentaje', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Controllers\\Previos.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Previos->guardar_previos()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Previos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
