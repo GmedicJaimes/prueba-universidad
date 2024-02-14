@@ -30,7 +30,7 @@
             </div>
             <div class="form-group">
               <label for="porcentaje">Porcentaje: </label>
-              <input type="number" name="porcentaje" id="porcentaje" class="form-control" min="0" max="100">
+              <input type="number" name="porcentaje" id="porcentaje" class="form-control" >
             </div>
             
             <button class="btn btn-success" type="submit">Guardar</button>

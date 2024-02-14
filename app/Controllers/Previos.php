@@ -30,45 +30,43 @@ class Previos extends Controller
   public function guardar_previos(){ 
 
     $db = \Config\Database::connect();
-
+    
     $PREVIO = $this->request->getVar('tipo_previo');
     $PORCENTAJE = $this->request->getVar('porcentaje');
-
-    $porcentajeDisponible = 100;
-
-    if($PORCENTAJE <= $porcentajeDisponible){
-
-      $existePrevio = $db->query("SELECT * FROM previos WHERE tipo_previo = '" . $PREVIO . "'")->getRow();
-
-      // $existePrevio = $db->query("SELECT * FROM previos WHERE tipo_previo = '" . $PREVIO . "'")->getRow();
-
-      if($existePrevio){
-
-        echo "Error, el previo ya existe";
-
-      } else {
-
-        $examen = [
-          'tipo' => $PREVIO,
-          'porcentaje' => $PORCENTAJE
-        ];
-        
-        $porcentajeDisponible -= $PORCENTAJE;
-  
-        $query = $db->query("INSERT INTO previos (tipo_previo, porcentaje) VALUES ('" . $examen['tipo'] . "','" . $examen['porcentaje'] . "')");
-      }
-
-    } else {
-
-      echo "El porcentaje agregado es mayor que el disponible. Por favor, ingresa un porcentaje válido.'";
-
-    }
-
+    
     $sumaPorcentajes = $db->query("SELECT SUM(porcentaje) as total FROM previos")->getRow();
 
-    if($sumaPorcentajes->total != $porcentajeDisponible){
+    if($sumaPorcentajes) {
 
-      echo "Lo siento, la suma de los porcentajes da 100%";
+      $porcentajeDisponible = 100 - $sumaPorcentajes->total;
+
+      if($PORCENTAJE <= $porcentajeDisponible){
+
+        $existePrevio = $db->query("SELECT * FROM previos WHERE tipo_previo = '" . $PREVIO . "'")->getRow();
+  
+        // $existePrevio = $db->query("SELECT * FROM previos WHERE tipo_previo = '" . $PREVIO . "'")->getRow();
+  
+        if($existePrevio){
+  
+          echo "<script language='javascript'>alert('Error el previo ya existe');</script>";
+  
+        } else {  
+  
+          $examen = [
+            'tipo' => $PREVIO,
+            'porcentaje' => $PORCENTAJE
+          ];
+          
+          $porcentajeDisponible -= $PORCENTAJE;
+    
+          $query = $db->query("INSERT INTO previos (tipo_previo, porcentaje) VALUES ('" . $examen['tipo'] . "','" . $examen['porcentaje'] . "')");
+        }
+  
+      } else {
+  
+        echo "El porcentaje agregado es mayor que el disponible. Por favor, ingresa un porcentaje válido.'";
+  
+      }
 
     }
 
