@@ -48,7 +48,10 @@ class Previos extends Controller
   
         if($existePrevio){
   
-          echo "<script language='javascript'>alert('Error el previo ya existe');</script>";
+          return "<script language='javascript'>
+                alert('Error el previo ya existe');
+                window.location.href='previos';
+                </script>";
   
         } else {  
   
@@ -63,8 +66,11 @@ class Previos extends Controller
         }
   
       } else {
-  
-        echo "El porcentaje agregado es mayor que el disponible. Por favor, ingresa un porcentaje válido.'";
+
+        return "<script language='javascript'>
+        alert('El porcentaje agregado es mayor que el disponible. Por favor, ingresa un porcentaje válido.');
+        window.location.href='previos';
+        </script>";
   
       }
 
