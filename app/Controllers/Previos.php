@@ -23,7 +23,12 @@ class Previos extends Controller
 
   public function insertar_previos(){
 
-    return view('previos/insertPrevio');
+
+    $previos = ['Primer Previo', 'Segundo Previo', 'Tercera Nota', 'Examen Final'];
+
+    $datos = ['previos' => $previos];
+
+    return view('previos/insertPrevio', $datos);
   }
 
 
@@ -65,7 +70,7 @@ class Previos extends Controller
           $query = $db->query("INSERT INTO previos (tipo_previo, porcentaje) VALUES ('" . $examen['tipo'] . "','" . $examen['porcentaje'] . "')");
         }
   
-      } else {
+      } else { 
 
         return "<script language='javascript'>
         alert('El porcentaje agregado es mayor que el disponible. Por favor, ingresa un porcentaje válido.');

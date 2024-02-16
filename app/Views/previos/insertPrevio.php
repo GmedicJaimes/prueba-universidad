@@ -25,7 +25,13 @@
           <form method="post" action="<?= site_url('/guardar-previos') ?>" enctype="multipart/form-data">
             <div class="form-group">
               <label for="tipo_previo">Tipo de previo: </label>
-              <input name="tipo_previo" id="tipo_previo" class="form-control" type="text">
+              <select name="tipo_previo" id="tipo_previo" class="custom-select mr-sm-2">
+                <?php foreach ($previos as $previo) { ?>
+
+                  <option value=""><?= $previo?></option>
+                <?php } ?>  
+                  
+              </select>
               
             </div>
             <div class="form-group">

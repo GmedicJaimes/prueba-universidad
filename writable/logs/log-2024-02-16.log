@@ -1,0 +1,11 @@
+CRITICAL - 2024-02-16 22:57:24 --> Undefined variable $personas
+in APPPATH\Views\previos\insertPrevio.php on line 29.
+ 1 APPPATH\Views\previos\insertPrevio.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $personas', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\previos\\insertPrevio.php', 29)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\previos\\insertPrevio.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('previos/insertPrevio', [], true)
+ 5 APPPATH\Controllers\Previos.php(31): view('previos/insertPrevio', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Previos->insertar_previos()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Previos))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
