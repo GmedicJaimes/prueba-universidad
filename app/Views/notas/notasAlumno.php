@@ -37,6 +37,9 @@
         </tr>
       </thead>
       <tbody class='text-center border'>
+
+      <?php foreac?>
+
         <?php foreach ($notas as $nota) { ?>
           <tr>
             <td ><?= $nota['codigo_materia']?></td>

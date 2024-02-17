@@ -9,3 +9,12 @@ in APPPATH\Views\previos\insertPrevio.php on line 29.
  7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Previos))
  8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 23:35:03 --> syntax error, unexpected token ";"
+in APPPATH\Views\notas\notasAlumno.php on line 63.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('notas/notasAlumno', [], true)
+ 3 APPPATH\Controllers\Notas.php(44): view('notas/notasAlumno', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->notas_estudiante('1220344')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

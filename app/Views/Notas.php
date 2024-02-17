@@ -21,9 +21,6 @@
     <a href="<?= base_url('/')?>" class="btn btn-primary mt-3 mb-3"> Back</a>
     <h3 class="card-title">Selecciona al estudiante para ver sus notas:</h3>
 
-       
-
-
           <table class="table table-dark table-striped">
           <thead class=" text-center ">
             <tr>
