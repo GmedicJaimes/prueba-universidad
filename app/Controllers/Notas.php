@@ -29,16 +29,20 @@ class Notas extends Controller
     $queryPrevios = $db->query("SELECT * FROM previos");
     $queryPersona = $db->query("SELECT * FROM persona WHERE codigo = $codigo");
 
+    $queryMaterias = $db->query("SELECT * FROM materia");
+
     
     $resultadoNotas = $queryNotas->getResultArray();
     $resultadoPrevios = $queryPrevios->getResultArray();
     $resultadoPersona = $queryPersona->getResultArray();
+    $resultadoMaterias = $queryMaterias->getResultArray();
 
 
     $datos = [
       "notas" => $resultadoNotas,
       "previos" => $resultadoPrevios,
-      "estudiante" => $resultadoPersona
+      "estudiante" => $resultadoPersona,
+      "materias" => $resultadoMaterias
     ];
 
     return view('notas/notasAlumno', $datos);

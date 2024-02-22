@@ -25,12 +25,13 @@
         <h2>Notas del estudiante: <?= $estudiante[0]['nombres'] . ' ' . $estudiante[0]['codigo']?></h2>
        
         <tr>
-          <th>Codigo Materia</th>
-          <th>Primer Previo</th>
-          <th>Segundo Previo</th>
-          <th>Tercera Nota</th>
-          <th>Examen Final</th>
-          <th>Definitiva</th>
+          <th>Materia</th>
+          <th>Nombre</th>
+          <th>1P</th>
+          <th>2P</th>
+          <th>3P</th>
+          <th>EX</th>
+          <th>DEF</th>
           <th>Fecha</th>
           <th>Accion</th>
   
@@ -38,38 +39,43 @@
       </thead>
       <tbody class='text-center border'>
 
-      <?php foreac?>
+        <?php
+          function calcularNotaFinal($primerPrevio, $segundoPrevio, $terceraNota, $examenFinal){
 
-        <?php foreach ($notas as $nota) { ?>
-          <tr>
-            <td ><?= $nota['codigo_materia']?></td>
-            <td >
-              <?php if($nota["tipo_previo"] == 'Primer Previo') 
-                {echo $nota['nota'];}  
-                ?>
-            </td>
-            <td >
-              <?php if($nota["tipo_previo"] == 'Segundo Previo') 
-                {echo $nota['nota'];}  
-                ?>
-            </td>
-            <td >
-              <?php if($nota["tipo_previo"] == 'Tercera Nota') 
-                {echo $nota['nota'];}  
-                ?>
-            </td>
-            <td >
-              <?php if($nota["tipo_previo"] == 'Examen Final') 
-                {echo $nota['nota'];}  
-                ?>
-            </td>
-            <td ><?= $nota['nota'] ?></td>
-            <td><?= $nota['fecha_insert']?></td>
-            <td >
-              <a href='<?= base_url('editar/' . $nota['codigo']) ?>' class="btn btn-info" type="button">Editar</a>
-            </td>
-          </tr>
+            $notaFinal = ($primerPrevio * 0.3) + ($segundoPrevio * 0.3) + ($terceraNota * 0.15) + ($examenFinal * 0.25);
+
+            // print_r($notaFinal);
+            return $notaFinal;
+          }
+        ?>
+
+
+
+       
+          <?php foreach ($notas as $nota) { ?>
+            <tr>
+              <td ><?= $nota['codigo_materia']?></td>
+              <td><?= $materias[0]['nombre'] ?></td>
+
+              <?php foreach ($previos as $previo) { ?>
+                <td >
+                  <?php if($nota["tipo_previo"] == $previo) 
+                    {return $nota['nota'];}  
+                    ?>
+                </td>
+                
+              <?php } ?>    
+              <td>
+              
+              </td>
+              <td><?= $nota['fecha_insert']?></td>
+              <td >
+                <a href='<?= base_url('editar/' . $nota['codigo']) ?>' class="btn btn-info" type="button">Editar</a>
+              </td>
+            </tr>
           <?php } ?>
+        
+   
       </tbody>
     </table>
 
