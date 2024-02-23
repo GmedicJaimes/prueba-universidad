@@ -48,32 +48,34 @@
             return $notaFinal;
           }
         ?>
+          <?php print_r($materias) ?>
+          
+            <?php foreach ($notas as $nota) { ?>
+              <tr>
+                <td><?= $nota['codigo_materia']?></td>
+                <td><?= $materias[0]["nombre"]?></td>
 
-
-
-       
-          <?php foreach ($notas as $nota) { ?>
-            <tr>
-              <td ><?= $nota['codigo_materia']?></td>
-              <td><?= $materias[0]['nombre'] ?></td>
-
-              <?php foreach ($previos as $previo) { ?>
-                <td >
-                  <?php if($nota["tipo_previo"] == $previo) 
-                    {return $nota['nota'];}  
-                    ?>
-                </td>
+            
+                <?php foreach ($previos as $previo) { ?>
+                  <td >
+                      <?php if($previo) {
+    
+                        echo  $nota['nota']; 
+                      }
+                      ?>
+                  </td> 
+                <?php } ?>   
                 
-              <?php } ?>    
-              <td>
-              
-              </td>
-              <td><?= $nota['fecha_insert']?></td>
-              <td >
-                <a href='<?= base_url('editar/' . $nota['codigo']) ?>' class="btn btn-info" type="button">Editar</a>
-              </td>
-            </tr>
-          <?php } ?>
+                <td>
+                
+                </td>
+                <td><?= $nota['fecha_insert']?></td>
+                <td >
+                  <a href='<?= base_url('editar/' . $nota['codigo']) ?>' class="btn btn-info" type="button">Editar</a>
+                </td>
+              </tr>
+            <?php } ?>
+         
         
    
       </tbody>

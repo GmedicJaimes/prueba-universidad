@@ -9,7 +9,7 @@ class Semestres extends Controller{
 
     $db = \Config\Database::connect();
   
-    $query = $db->query("SELECT * FROM persona, materia, semestre WHERE persona.codigo = semestre.codigo AND materia.codigo_materia = semestre.codigo_materia ORDER BY materia.codigo_materia DESC ");
+    $query = $db->query("SELECT * FROM persona, materia, semestre WHERE persona.codigo = semestre.codigo AND materia.codigo_materia = semestre.codigo_materia ORDER BY persona.codigo DESC ");
   
     $resultado = $query->getResultArray();
   

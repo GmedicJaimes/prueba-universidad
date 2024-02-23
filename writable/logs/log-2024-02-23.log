@@ -1,0 +1,156 @@
+CRITICAL - 2024-02-23 01:29:40 --> Unmatched '}'
+in APPPATH\Views\notas\notasAlumno.php on line 76.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('notas/notasAlumno', [], true)
+ 3 APPPATH\Controllers\Notas.php(48): view('notas/notasAlumno', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->notas_estudiante('1220344')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-23 01:35:09 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE codigo = materia.codigo_materia' at line 1 in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM m...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Notas.php(32): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Notas->notas_estudiante('1220344')
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-23 01:35:09 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE codigo = materia.codigo_materia' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Notas.php(32): CodeIgniter\Database\BaseConnection->query('SELECT * FROM materia, nota WHERE materia.codigo_materia = nota.codigo_materia WHERE codigo = materia.codigo_materia')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->notas_estudiante('1220344')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-23 01:35:27 --> mysqli_sql_exception: Unknown column 'codigo' in 'where clause' in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM m...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Notas.php(32): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Notas->notas_estudiante('1220344')
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-23 01:35:27 --> Unknown column 'codigo' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Notas.php(32): CodeIgniter\Database\BaseConnection->query('SELECT * FROM materia WHERE codigo = materia.codigo_materia')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->notas_estudiante('1220344')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-23 01:35:44 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE codigo_materia = materia.codigo_materia' at line 1 in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM m...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Notas.php(32): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Notas->notas_estudiante('1220344')
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-23 01:35:44 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE codigo_materia = materia.codigo_materia' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Notas.php(32): CodeIgniter\Database\BaseConnection->query('SELECT * FROM materia, nota WHERE materia.codigo_materia = nota.codigo_materia WHERE codigo_materia = materia.codigo_materia')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->notas_estudiante('1220344')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-23 01:41:40 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE codigo_materia = materia.codigo_materia' at line 1 in C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\prueba-universidad\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM m...', 0)
+#1 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 C:\xampp\htdocs\prueba-universidad\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 C:\xampp\htdocs\prueba-universidad\app\Controllers\Notas.php(32): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(942): App\Controllers\Notas->notas_estudiante('1220344')
+#5 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+#6 C:\xampp\htdocs\prueba-universidad\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\prueba-universidad\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-23 01:41:40 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE codigo_materia = materia.codigo_materia' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Notas.php(32): CodeIgniter\Database\BaseConnection->query('SELECT * FROM materia, nota WHERE materia.codigo_materia = nota.codigo_materia WHERE codigo_materia = materia.codigo_materia')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->notas_estudiante('1220344')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-23 01:46:11 --> Unmatched '}'
+in APPPATH\Views\notas\notasAlumno.php on line 77.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('notas/notasAlumno', [], true)
+ 3 APPPATH\Controllers\Notas.php(48): view('notas/notasAlumno', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->notas_estudiante('1220344')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-23 01:46:18 --> Undefined variable $materia
+in APPPATH\Views\notas\notasAlumno.php on line 55.
+ 1 APPPATH\Views\notas\notasAlumno.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $materia', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\notas\\notasAlumno.php', 55)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\notas\\notasAlumno.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('notas/notasAlumno', [], true)
+ 5 APPPATH\Controllers\Notas.php(48): view('notas/notasAlumno', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->notas_estudiante('1220344')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-23 01:49:06 --> Undefined variable $resultadoNotas
+in APPPATH\Controllers\Notas.php on line 35.
+ 1 APPPATH\Controllers\Notas.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultadoNotas', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Controllers\\Notas.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->notas_estudiante('1220344')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-23 01:49:13 --> Undefined variable $resultadoMaterias
+in APPPATH\Controllers\Notas.php on line 40.
+ 1 APPPATH\Controllers\Notas.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultadoMaterias', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Controllers\\Notas.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->notas_estudiante('1220344')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-23 01:52:34 --> syntax error, unexpected token "if"
+in APPPATH\Views\notas\notasAlumno.php on line 61.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('notas/notasAlumno', [], true)
+ 3 APPPATH\Controllers\Notas.php(46): view('notas/notasAlumno', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->notas_estudiante('1220344')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-23 01:54:53 --> Undefined variable $materias
+in APPPATH\Views\notas\notasAlumno.php on line 51.
+ 1 APPPATH\Views\notas\notasAlumno.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $materias', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\notas\\notasAlumno.php', 51)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\notas\\notasAlumno.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('notas/notasAlumno', [], true)
+ 5 APPPATH\Controllers\Notas.php(44): view('notas/notasAlumno', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->notas_estudiante('1220344')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-23 01:55:00 --> Undefined variable $materias
+in APPPATH\Views\notas\notasAlumno.php on line 56.
+ 1 APPPATH\Views\notas\notasAlumno.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $materias', 'C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\notas\\notasAlumno.php', 56)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\prueba-universidad\\app\\Views\\notas\\notasAlumno.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('notas/notasAlumno', [], true)
+ 5 APPPATH\Controllers\Notas.php(44): view('notas/notasAlumno', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->notas_estudiante('1220344')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-23 01:55:16 --> Undefined constant "materias"
+in APPPATH\Views\notas\notasAlumno.php on line 56.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('notas/notasAlumno', [], true)
+ 4 APPPATH\Controllers\Notas.php(44): view('notas/notasAlumno', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Notas->notas_estudiante('1220344')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notas))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
