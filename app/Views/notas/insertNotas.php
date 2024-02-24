@@ -31,7 +31,7 @@
               </select>
 
 
-              <label for="codigo_materia">Codigo Materia: </label>
+              <label for="codigo_materia">Materia: </label>
 
               <select name="codigo_materia" id="codigo_materia" class="custom-select mr-sm-2">
                 

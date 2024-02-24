@@ -21,15 +21,17 @@ class Notas extends Controller
   }
 
 
-  public function notas_estudiante($codigo = null){
+  public function notas_estudiante($codigo = null ,$codigo_materia = null ){
 
     $db = \Config\Database::connect();
-    
-    $queryNotas = $db->query("SELECT * FROM nota WHERE codigo = $codigo");
+
+    $queryNotas = $db->query("SELECT * FROM nota where codigo = '".$codigo."' ");
+
     $queryPrevios = $db->query("SELECT * FROM previos");
+
     $queryPersona = $db->query("SELECT * FROM persona WHERE codigo = $codigo");
 
-    $queryMaterias = $db->query("SELECT * FROM materia, nota WHERE materia.codigo_materia = nota.codigo_materia");
+    $queryMaterias = $db->query("SELECT * FROM materia m, semestre s where m.codigo_materia = s.codigo_materia and s.codigo = '".$codigo."'");
 
     $resultadoNotas = $queryNotas->getResultArray();
     $resultadoPrevios = $queryPrevios->getResultArray();
@@ -43,6 +45,8 @@ class Notas extends Controller
       "materias" => $resultadoMaterias
     ];
 
+    // $notaPromedio =  ($nota['nota'] * $previo['porcentaje']) / 100 ;echo $notaPromedio;
+
     return view('notas/notasAlumno', $datos);
 
   }
@@ -55,7 +59,7 @@ class Notas extends Controller
     $queryPersona = $db->query("SELECT * FROM persona WHERE codigo = $codigo");
     $queryPrevios = $db->query("SELECT * FROM previos");
     $queryNotas = $db->query("SELECT * FROM nota");
-    $queryMateria = $db->query("SELECT * FROM materia");
+    $queryMateria = $db->query("SELECT * FROM materia m, semestre s where m.codigo_materia = s.codigo_materia and s.codigo = '".$codigo."'");
 
     $resultadoNotas = $queryNotas->getResultArray();
     $resultadoPrevios = $queryPrevios->getResultArray();

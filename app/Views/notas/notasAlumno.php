@@ -11,7 +11,7 @@
   <nav class="navbar navbar-dark bg-dark">
     <div class='container'>
 
-      <h1 class='text-primary text-center'>Listado de Notas</h1>
+      <h1 class='text-primary text-center'>listado de notas</h1>
     </div>
 
   </nav>
@@ -27,57 +27,47 @@
         <tr>
           <th>Materia</th>
           <th>Nombre</th>
-          <th>1P</th>
-          <th>2P</th>
-          <th>3P</th>
-          <th>EX</th>
+          <?php foreach ($previos as $previo) { ?>
+          <th><?php echo $previo['tipo_previo']; ?></th>
+          <?php } ?>
           <th>DEF</th>
-          <th>Fecha</th>
-          <th>Accion</th>
+          
   
         </tr>
       </thead>
       <tbody class='text-center border'>
 
-        <?php
-          function calcularNotaFinal($primerPrevio, $segundoPrevio, $terceraNota, $examenFinal){
-
-            $notaFinal = ($primerPrevio * 0.3) + ($segundoPrevio * 0.3) + ($terceraNota * 0.15) + ($examenFinal * 0.25);
-
-            // print_r($notaFinal);
-            return $notaFinal;
-          }
-        ?>
-          <?php print_r($materias) ?>
-          
-            <?php foreach ($notas as $nota) { ?>
-              <tr>
-                <td><?= $nota['codigo_materia']?></td>
-                <td><?= $materias[0]["nombre"]?></td>
-
             
+            <?php foreach ($materias as $mat) { $total = 0;?>
+              <tr>
+                <td><?php echo $mat["codigo_materia"]; ?></td>
+                <td><?php echo $mat["nombre"]; ?></td>
                 <?php foreach ($previos as $previo) { ?>
-                  <td >
-                      <?php if($previo) {
-    
-                        echo  $nota['nota']; 
-                      }
-                      ?>
-                  </td> 
-                <?php } ?>   
-                
+                  <td><?php 
+                  $notaaux= '-'; 
+                  foreach ($notas as $nota) { ?>
+                      <?php if($nota["codigo_materia"] == $mat["codigo_materia"]){ 
+                        if($nota['tipo_previo'] == $previo['tipo_previo']) {
+                        $notaaux = $nota['nota'];
+
+                        $total = $total + ($notaaux * $previo['porcentaje'])/100;
+                      } ?>
+                    <?php } 
+                    } 
+                  echo $notaaux; ?></td>
+
+
+                <?php } ?> 
                 <td>
-                
+                  <?php 
+                    echo $total;  ?>
                 </td>
-                <td><?= $nota['fecha_insert']?></td>
-                <td >
-                  <a href='<?= base_url('editar/' . $nota['codigo']) ?>' class="btn btn-info" type="button">Editar</a>
-                </td>
+             
+                <td></td>
+                  
               </tr>
-            <?php } ?>
+            <?php } ?>  
          
-        
-   
       </tbody>
     </table>
 
